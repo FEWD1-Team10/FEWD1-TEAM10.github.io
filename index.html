@@ -10,7 +10,9 @@
     <!-- [if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
     <![end if]-->
-    <link href="#" type="text/css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'> <!--Google Font "Roboto Slab"-->
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="styles/main.css" type="text/css" rel="stylesheet" />
 </head>
 
 
@@ -19,21 +21,38 @@
 <body>
 
 <header>
-    <nav>
-        <ul>
+    <a id="logo" href="index.html">
+        <img src="images/logo3.png" alt="logo" />
+    </a>
+    <a id="menuIcon" href="#">
+        <img src="images/nav_icon.png" alt="navigation icon" />
+    </a>
+    <nav id="nav_bar">
+        <ul id="nav_ul">
             <li><a href="#">HOA</a></li>
-            <li><a href="#">Property Info</a></li>
+            <li><a href="#">Property Info</a>
+                <ul>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Forms</a></li>
+            <li><a href="#">Forms</a>
+                <ul>
+                    <li><a href="#">Financial Info</a></li>
+                    <li><a href="#">Minutes &#38; Agendas</a></li>
+                    <li><a href="#">Archives</a></li>
+                </ul>
+            </li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<h1>hello</h1>
 
-<div id="slidesContainer">
-    <ul class="slides">
+
+<div id="slideshow_container">
+    <ul id="slideshow_ul">
         <li><img src="images/slideshow1.jpg" alt="main gate"></li>
         <li><img src="images/slideshow2.jpg" alt="pool area"></li>
         <li><img src="images/slideshow3.jpg" alt="path"></li>
