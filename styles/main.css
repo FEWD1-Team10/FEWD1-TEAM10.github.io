@@ -1,0 +1,51 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    TABLE OF CONTENTS
+-----------------------------------------------------------
+
+    1. Project details
+    2. CSS reset
+    3. Global Styles (tags, basic styling)
+    4. Header and Nav
+    5. Main and Body
+    6. Generic Selectors
+    7. Footer
+    8. Media Queries
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    COLOR GUIDE
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    TYPOGRAPHY GUIDE
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    1. PROJECT DETAILS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Author: Jose Vargas, Daniel Masterson, Younji Woo
+    Project Name: La Paz Homeowners Association
+    Ver: 1.0
+    Last Updated: 05-25-2016
+    Notes:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+                        
+
+header, nav, section, article, aside, footer, video, audio {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
