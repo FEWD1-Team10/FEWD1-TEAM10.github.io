@@ -25,8 +25,8 @@ dark gray (logo) : #80828a
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     TYPOGRAPHY GUIDE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Logo, Body: "Roboto Slab"
-
+    Header: "Poiret One"
+    Body: "Roboto Slab"
 
 
 
@@ -88,30 +88,81 @@ header, nav, section, article, aside, footer, video, audio {
                     4. Header and Nav
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 header {
-    padding: 5px;
+    padding: .1em;
 }
-#logo img {
-    width: 80%;
-    height: auto;
+#logo > h1 {
+    font-size: 6em;
+    font-family: "Poiret One";
+    text-align: center;
+}
+#logo > h6 {
+    font-size: 1.3em;
+    font-family: "Poiret One";
+    text-align: center;
+    margin-bottom: .5em;
+}
+#menuIcon {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+}
+#menuIcon:hover + ul{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 #menuIcon img {
     width: 40px;
     height: auto;
 }
-#nav_ul li {
-    
+/*+++++++++++++++++++++++++++++++++++
+           Navigation Bar
++++++++++++++++++++++++++++++++++++*/
+#nav_ul {
+    display: none;
+    display: relative;
+    background-color: black;
+    opacity: .8;
+    width: 100%;
 }
 #nav_ul a {
     display: block;
     text-decoration: none;
-    color: #80828a;
-    border: 1px solid #ccc;
+    color: white;
     font-size: 1.2em;
     padding: .5em;
 }
+#nav_ul li:hover #pi_ul,  #nav_ul li:hover #forms_ul {
+    display: block;
+}
+#nav_ul #pi_ul {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 195px;
+    left: 180px;
+}
+#nav_ul #pi_ul li {
+    list-style-type: none;
+}
+#nav_ul #forms_ul {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 290px;
+    left: 180px;
+}
+#nav_ul #forms_ul li {
+    list-style-type: none;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+              Slide Show
++++++++++++++++++++++++++++++++++++*/
 
 #slideshow_container {
-    padding: 0 5px 0 5px;
+    padding: 0 .1em;
 }
 
 #slideshow_ul img {

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -10,6 +10,7 @@
     <!-- [if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
     <![end if]-->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> <!-- Google Font "Poiret One"-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'> <!--Google Font "Roboto Slab"-->
     <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
@@ -21,24 +22,27 @@
 <body>
 
 <header>
-    <a id="logo" href="index.html">
-        <img src="images/logo3.png" alt="logo" />
-    </a>
-    <a id="menuIcon" href="#">
-        <img src="images/nav_icon.png" alt="navigation icon" />
-    </a>
+    
+    <div id="logo">
+        <h1>La Paz</h1>
+        <h6>Homeowners Association</h6>
+    </div>
+    
     <nav id="nav_bar">
+        
+        <a id="menuIcon" href="#"><img src="images/round_nav_icon3.png" alt="nav icon" /></a>
+        
         <ul id="nav_ul">
             <li><a href="#">HOA</a></li>
             <li><a href="#">Property Info</a>
-                <ul>
+                <ul id="pi_ul">
                     <li><a href="#">Photos</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Forms</a>
-                <ul>
+                <ul id="forms_ul">
                     <li><a href="#">Financial Info</a></li>
                     <li><a href="#">Minutes &#38; Agendas</a></li>
                     <li><a href="#">Archives</a></li>
