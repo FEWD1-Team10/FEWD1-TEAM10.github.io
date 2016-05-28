@@ -116,6 +116,9 @@ header {
     opacity: .8;
     width: 100%;
 }
+#nav_ul li {
+    list-style-type: none;
+}
 #nav_ul a {
     display: block;
     text-decoration: none;
@@ -158,7 +161,7 @@ header {
     display: none;
     background-color: white;
     position: absolute;
-    top: 290px;
+    top: 275px;
     left: 180px;
     width: 50%;
 }
