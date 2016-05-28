@@ -25,8 +25,8 @@ dark gray (logo) : #80828a
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     TYPOGRAPHY GUIDE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Header: "Poiret One"
-    Body: "Roboto Slab"
+    Header: "Poiret One", Verdana;
+    Body: "Roboto Slab", Verdana;
 
 
 
@@ -41,18 +41,6 @@ dark gray (logo) : #80828a
     Ver: 1.0
     Last Updated: 05-25-2016
     Notes:
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-                        
-
-header, nav, section, article, aside, footer, video, audio {
-    display: block;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -71,7 +59,9 @@ header, nav, section, article, aside, footer, video, audio {
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             3. Global Styles (tags, basic styling)
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
+header > nav, main, footer  {
+    font-family: "Roboto Slab", Verdana;
+}
 
 
 
@@ -120,13 +110,23 @@ header {
            Navigation Bar
 +++++++++++++++++++++++++++++++++++*/
 #nav_ul {
-    display: none;
+    /*display: none;*/
     display: relative;
     background-color: black;
     opacity: .8;
     width: 100%;
 }
 #nav_ul a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: .5em;
+}
+#nav_ul a:hover {
+    color: orange;
+}
+#nav_ul ul a {
     display: block;
     text-decoration: none;
     color: white;
@@ -142,6 +142,14 @@ header {
     position: absolute;
     top: 195px;
     left: 180px;
+    width: 50%;
+}
+#nav_ul #pi_ul a {
+    color: black;
+    background-color: white;
+}
+#nav_ul #pi_ul a:hover {
+    color: orange;
 }
 #nav_ul #pi_ul li {
     list-style-type: none;
@@ -152,6 +160,13 @@ header {
     position: absolute;
     top: 290px;
     left: 180px;
+    width: 50%;
+}
+#nav_ul #forms_ul a {
+    color: black;
+}
+#nav_ul #forms_ul a:hover {
+    color: orange;
 }
 #nav_ul #forms_ul li {
     list-style-type: none;
@@ -161,32 +176,148 @@ header {
               Slide Show
 +++++++++++++++++++++++++++++++++++*/
 
-#slideshow_container {
-    padding: 0 .1em;
-}
+    .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
 
-#slideshow_ul img {
-    width: 100%;
-    height: auto;
-}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
 
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
 
-
-
-
-
-
-
-
-
-
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+            /* page ination image controls */
+            .slideShow_container {
+                max-width: 1200px;
+                position: relative;
+            }
+            .rslides_tabs {
+                list-style-type: none;
+                position: absolute;
+                bottom:0;
+                left:50%;
+                z-index: 5;
+            }
+            .rslides_tabs li {
+                display: inline-block;
+                margin:0 5px 5px;
+            }
+            .rslides_tabs a {
+                color:#fff;
+                text-decoration: none;
+                width:10px;
+                height:10px;
+                border:solid 2px #fff;
+                background-color:#fff;
+                background-color:rgba(255,255,255,.8);
+                display: inline-block;
+                text-indent: -9999px;
+                border-radius: 15px;
+            }
+            .rslides_here a {
+                background-color:#333;
+                background-color:rgba(7,156,200,.8);
+            }
+            /* next/previous buttons */
+            .rslides_nav {
+                text-decoration: none;
+                width:38px;
+                height: 61px;
+                background:url(images/navArrows.png) no-repeat left top;
+                display: inline-block;
+                position: absolute;
+                top:40%;
+                z-index: 5;
+                text-indent: -9999px;
+                opacity: .7;
+            }
+            .rslides_nav.next {
+                right:0;
+                background-position: right top;
+            }
+            .rslides_nav:active {
+                opacity:1;
+            }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     5. Main and Body
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+.box {
+    margin: 35px 20px;
+}
+.box p {
+    margin: 0 auto;
+}
+
+.service-heading {
+    margin: 0px auto;
+}
+.service-heading a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+          propertyInfo.html
++++++++++++++++++++++++++++++++++++*/
+#photoGallery {
+    list-style-type: none;
+    text-align: center;
+}
+#photoGallery img {
+    width: 70%;
+    margin: .3em;
+    border-radius: 1em;   
+}
 
 
 
+
+/*+++++++++++++++++++++++++++++++++++
+          Services.html
++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          Forms.html
++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          Contact.html
++++++++++++++++++++++++++++++++++++*/
 
 
 
