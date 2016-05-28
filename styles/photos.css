@@ -20,8 +20,6 @@ dark gray (logo) : #80828a
 
 
 
-
-
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     TYPOGRAPHY GUIDE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -46,12 +44,6 @@ dark gray (logo) : #80828a
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     2. CSS reset
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-
-
-
-
-
 
 
 
@@ -175,115 +167,49 @@ header {
     list-style-type: none;
 }
 
-/*+++++++++++++++++++++++++++++++++++
-              Slide Show
-+++++++++++++++++++++++++++++++++++*/
 
-    .rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
-            /* page ination image controls */
-            .slideShow_container {
-                max-width: 1200px;
-                position: relative;
-            }
-            .rslides_tabs {
-                list-style-type: none;
-                position: absolute;
-                bottom:0;
-                left:50%;
-                z-index: 5;
-            }
-            .rslides_tabs li {
-                display: inline-block;
-                margin:0 5px 5px;
-            }
-            .rslides_tabs a {
-                color:#fff;
-                text-decoration: none;
-                width:10px;
-                height:10px;
-                border:solid 2px #fff;
-                background-color:#fff;
-                background-color:rgba(255,255,255,.8);
-                display: inline-block;
-                text-indent: -9999px;
-                border-radius: 15px;
-            }
-            .rslides_here a {
-                background-color:#333;
-                background-color:rgba(7,156,200,.8);
-            }
-            /* next/previous buttons */
-            .rslides_nav {
-                text-decoration: none;
-                width:38px;
-                height: 61px;
-                background:url(images/navArrows.png) no-repeat left top;
-                display: inline-block;
-                position: absolute;
-                top:40%;
-                z-index: 5;
-                text-indent: -9999px;
-                opacity: .7;
-            }
-            .rslides_nav.next {
-                right:0;
-                background-position: right top;
-            }
-            .rslides_nav:active {
-                opacity:1;
-            }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     5. Main and Body
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.box {
-    margin: 35px 20px;
-}
-.box p {
-    margin: 0 auto;
-}
 
-.service-heading {
-    margin: 0px auto;
-}
-.service-heading a {
-    text-decoration: none;
-}
-
-.text-center {
+/*+++++++++++++++++++++++++++++++++++
+          propertyInfo.html
++++++++++++++++++++++++++++++++++++*/
+#photoGallery {
+    list-style-type: none;
     text-align: center;
 }
+#photoGallery img {
+    width: 70%;
+    margin: .3em;
+    border-radius: 1em;   
+}
 
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          Services.html
++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          Forms.html
++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          Contact.html
++++++++++++++++++++++++++++++++++++*/
 
 
 
