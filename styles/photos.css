@@ -69,113 +69,12 @@ header > nav, main, footer  {
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     4. Header and Nav
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-header {
-    padding: .1em;
-}
-#logo > h1 {
-    font-size: 6em;
-    font-family: "Poiret One";
-    text-align: center;
-}
-#logo > h6 {
-    font-size: 1.3em;
-    font-family: "Poiret One";
-    text-align: center;
-    margin-bottom: .5em;
-}
-#menuIcon {
-    position: fixed;
-    top: 2%;
-    right: 2%;
-}
-#menuIcon:hover + ul{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#menuIcon img {
-    width: 40px;
-    height: auto;
-}
-/*+++++++++++++++++++++++++++++++++++
-           Navigation Bar
-+++++++++++++++++++++++++++++++++++*/
-#nav_ul {
-    /*display: none;*/
-    display: relative;
-    background-color: black;
-    opacity: .8;
-    width: 100%;
-}
-#nav_ul li {
-    list-style-type: none;
-}
-#nav_ul a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: .5em;
-}
-#nav_ul a:hover {
-    color: orange;
-}
-#nav_ul ul a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: .5em;
-}
-#nav_ul li:hover #pi_ul,  #nav_ul li:hover #forms_ul {
-    display: block;
-}
-#nav_ul #pi_ul {
-/*    display: none;*/
-    background-color: white;
-    position: absolute;
-    top: 195px;
-    left: 180px;
-    width: 50%;
-}
-#nav_ul #pi_ul a {
-    color: black;
-    background-color: white;
-}
-#nav_ul #pi_ul a:hover {
-    color: orange;
-}
-#nav_ul #pi_ul li {
-    list-style-type: none;
-}
-#nav_ul #forms_ul {
-    display: none;
-    background-color: white;
-    position: absolute;
-    top: 275px;
-    left: 180px;
-    width: 50%;
-}
-#nav_ul #forms_ul a {
-    color: black;
-}
-#nav_ul #forms_ul a:hover {
-    color: orange;
-}
-#nav_ul #forms_ul li {
-    list-style-type: none;
-}
-
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     5. Main and Body
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-/*+++++++++++++++++++++++++++++++++++
-          propertyInfo.html
-+++++++++++++++++++++++++++++++++++*/
 #photoGallery {
     list-style-type: none;
     text-align: center;
