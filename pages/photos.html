@@ -1,27 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 
 <html lang="en">
 
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Property Info - Photos Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Paz Homeowners Association</title>
 
-    <!-- [if lt IE 9]>
-        <script src="js/html5shiv.min.js"></script>
-    <![end if]-->   
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> <!-- Google Font "Poiret One"-->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'> <!--Google Font "Roboto Slab"-->
-    <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->   
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' /> <!-- Google Font "Poiret One"-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
+    <link href="../styles/normalize.css" type="text/css" rel="stylesheet" />
+    <link href='../plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- Mobile Nav Bar Plug-in CSS (required) -->    
+    <link href='../plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- Nav Bar Menu Theme (optional, you can use your own CSS, too) -->
+    <link href="../styles/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/bootstrap-image-gallery.min.css" rel="stylesheet" type="text/css" />
     <link href="../styles/main.css" type="text/css" rel="stylesheet" />
-    <link href="../styles/photos.css" type="text/css" rel="stylesheet" />
-   
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="../styles/bootstrap-image-gallery.min.css" />
+    
+    
+    
+ 
 </head>
-
 
 <body>
 
@@ -32,11 +34,9 @@
         <h6>Homeowners Association</h6>
     </div>
     
-    <nav id="nav_bar">
+    <a id="menuIcon" href="#"><img src="../images/menuIcon.png" alt="menu icon" /></a>
         
-        <a id="menuIcon" href="#"><img src="../images/round_nav_icon3.png" alt="nav icon" /></a>
-        
-        <ul id="nav_ul">
+        <ul id="nav_ul" class="sm sm-clean"> 
             <li><a href="#">HOA</a></li>
             <li><a href="#">Property Info</a>
                 <ul id="pi_ul">
@@ -54,7 +54,6 @@
             </li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
 </header>
 
 <main>
@@ -119,9 +118,15 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <!-- Here are all the script tags -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/responsiveslides.min.js"></script>
+    <script src="../plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script>
     <script src="../js/bootstrap-image-gallery.min.js"></script>
+    <script src="../js/blueimp-gallery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/navbar.js"></script>
+
 </body>
 
 </html>

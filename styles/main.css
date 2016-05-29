@@ -59,7 +59,7 @@ dark gray (logo) : #80828a
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             3. Global Styles (tags, basic styling)
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-header > nav, main, footer  {
+body {
     font-family: "Roboto Slab", Verdana;
 }
 
@@ -102,20 +102,19 @@ header {
     width: 40px;
     height: auto;
 }
-.clickState {
-    
-}
 /*+++++++++++++++++++++++++++++++++++
            Navigation Bar
 +++++++++++++++++++++++++++++++++++*/
+/*
 #nav_ul {
-/*    display: none;*/
+    display: none;
     position: relative;
     background-color: black;
     opacity: .8;
     width: 100%;
     height: 100%;
     padding-left: 0;
+    text-align: center;
 }
 #nav_ul li {
     list-style-type: none;
@@ -176,7 +175,7 @@ header {
 #nav_ul #forms_ul li {
     list-style-type: none;
 }
-
+*/
 /*+++++++++++++++++++++++++++++++++++
               Slide Show
 +++++++++++++++++++++++++++++++++++*/
