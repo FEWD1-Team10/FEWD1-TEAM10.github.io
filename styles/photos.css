@@ -75,40 +75,24 @@ header > nav, main, footer  {
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-#photoGallery {
+#links {
     list-style-type: none;
     text-align: center;
 }
-#photoGallery img {
-    width: 70%;
+#links img {
+/*    width: 70%;*/
     margin: .3em;
     border-radius: 1em;   
+}
+#links a {
+    display: block;
+    width: 100px;
+    height: 100px;
 }
 
 
 
 
-/*+++++++++++++++++++++++++++++++++++
-          Services.html
-+++++++++++++++++++++++++++++++++++*/
-
-
-
-
-
-
-/*+++++++++++++++++++++++++++++++++++
-          Forms.html
-+++++++++++++++++++++++++++++++++++*/
-
-
-
-
-
-
-/*+++++++++++++++++++++++++++++++++++
-          Contact.html
-+++++++++++++++++++++++++++++++++++*/
 
 
 

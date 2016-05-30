@@ -1,0 +1,51 @@
+body {
+    font-family: "Roboto Slab", Verdana;
+}
+header {
+    padding: .1em;
+}
+#logo > h1 {
+    font-size: 6em;
+    font-family: "Poiret One";
+    text-align: center;
+    margin: 0 auto;
+}
+#logo > h6 {
+    font-size: 1.3em;
+    font-family: "Poiret One";
+    text-align: center;
+    margin: 0 0 .5em 0;
+}
+#menuIcon {
+    position: fixed;
+    z-index: 30;
+    top: 2%;
+    right: 2%;
+}
+#menuIcon img {
+    width: 40px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+#galleryPics ul {
+    text-align: center;
+    list-style-type: none;
+}
+#galleryPics li {
+    display: inline-block;
+    font-size: .8em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#galleryPics img {
+    width: 150px;
+    padding: 5px;
+    margin: 5px 5px 0;
+    border: solid 1px #999;
+    display: block; /* makes the captions next to the images. */
+}

@@ -14,8 +14,9 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' /> <!-- Google Font "Poiret One"-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
     <link href="../styles/normalize.css" type="text/css" rel="stylesheet" />
-    <link href='../plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- Mobile Nav Bar Plug-in CSS (required) -->    
-    <link href='../plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- Nav Bar Menu Theme (optional, you can use your own CSS, too) -->
+    <link href='../plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /> Mobile Nav Bar Plug-in CSS (required)     
+    <link href='../plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /> Nav Bar Menu Theme (optional, you can use your own CSS, too) 
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="../styles/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
     <link href="../styles/bootstrap-image-gallery.min.css" rel="stylesheet" type="text/css" />
     <link href="../styles/main.css" type="text/css" rel="stylesheet" />
@@ -60,7 +61,7 @@
     <h1>Photo Gallery</h1>
     <p>Get a sneak peek into our La Paz community to get a feel for what life will be like when you call our property home. The thoughtful amenities and convenient services we offer are meant to impress.</p>    
     
-    <ul id="photoGallery">
+    <ul id="links">
         <li><a href="../images/slideshow1.jpg" title="main gate" data-gallery><img src="../images/slideshow1.jpg" alt="main gate" /></a></li>
         <li><a href="../images/slideshow2.jpg" title="pool area" data-gallery><img src="../images/slideshow2.jpg" alt="pool area" /></a></li>
         <li><a href="../images/slideshow3.jpg" title="path" data-gallery><img src="../images/slideshow3.jpg" alt="path" /></a></li>
@@ -82,50 +83,54 @@
 
 
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-        <div id="blueimp-gallery" class="blueimp-gallery">
-            <!-- The container for the modal slides -->
-            <div class="slides"></div>
-            <!-- Controls for the borderless lightbox -->
-            <h3 class="title"></h3>
-            <a class="prev">‹</a>
-            <a class="next">›</a>
-            <a class="close">×</a>
-            <a class="play-pause"></a>
-            <ol class="indicator"></ol>
-            <!-- The modal dialog, which will be used to wrap the lightbox content -->
-            <div class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title"></h4>
-                        </div>
-                        <div class="modal-body next"></div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default pull-left prev">
-                                <i class="glyphicon glyphicon-chevron-left"></i>
-                                Previous
-                            </button>
-                            <button type="button" class="btn btn-primary next">
-                                Next
-                                <i class="glyphicon glyphicon-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
 
-
+    
+    
+    
     <!-- Here are all the script tags -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="../js/responsiveslides.min.js"></script>
-    <script src="../plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script>
-    <script src="../js/bootstrap-image-gallery.min.js"></script>
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--    <script src="../plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script>-->
+    
     <script src="../js/blueimp-gallery.min.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/navbar.js"></script>
+    <script src="../js/bootstrap-image-gallery.min.js"></script>
+    
+<!--    <script src="../js/main.js"></script>-->
+<!--    <script src="../js/navbar.js"></script>-->
 
 </body>
 
