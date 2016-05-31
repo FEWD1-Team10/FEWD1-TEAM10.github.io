@@ -17,7 +17,7 @@ header {
     margin: 0 0 .5em 0;
 }
 #nav_ul {
-    margin: .5em;
+    margin: 1em;
 }
 #menuIcon {
     position: fixed;
@@ -30,24 +30,36 @@ header {
     height: auto;
 }
 .questionBox {
-    margin: .5em;
+    margin: 0 1em;
 }
-.questionBox > h6 {
+.questionBox h6 {
     display: block;
-    padding: .8em;
+    padding: 1em;
     background-color: #666;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+}
+.questionBox h6:active {
+    background-color: black;/* We should change this depends on our color theme. */
 }
 .answerBox {
-    margin: .5em;
-}
-.answerBox > p {
-    display: block;
-    padding: .5em;
+    line-height: 1.6em;
+    margin: 0 1em;
+    padding: 1em;
     border: solid 1px lightgray;
     border-radius: 5px;
 }
+
+
+/* media queries for big screen
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+*/
 
 
 
