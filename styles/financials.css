@@ -5,6 +5,8 @@ header {
     padding: .1em;
 }
 
+
+
 /*----- "La Paz Homeowners Association" Logo ----*/
 #logo > h1 {
     font-size: 6em;
@@ -18,11 +20,15 @@ header {
     text-align: center;
     margin: 0 0 .5em 0;
 }
+
+
+
+
 /*----- Nav Bar and Hamberger Icon ----*/
 #nav_ul {
-    margin: 1em;
+    margin: 0 1em;
 }
-#menuIcon {
+#menuIcon { /* Hamberger Icon */
     position: fixed;
     z-index: 30;
     top: 2%;
@@ -32,27 +38,41 @@ header {
     width: 40px;
     height: auto;
 }
-/*----- Question Boxes ----*/
-.questionBox {
-    margin: 0 1em;
+main { /* Table is in <main> */
+    margin: 0 1em; /* Gives table a margin on both sides */
 }
-.questionBox h6 {
-    display: block;
-    padding: 1em;
-    background-color: #666;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+
+
+
+/*----- Table ----*/
+table {
+    width: 100%; /* makes the table responsive */
 }
-.questionBox h6:active {
-    background-color: black;/* We should change this depends on our color theme. */
+th, td {
+    text-align: center;
+    width: 33%; /* makes each column take up 1/3 */
 }
-.answerBox {
-    line-height: 1.6em;
-    margin: 0 1em;
-    padding: 1em;
-    border: solid 1px lightgray;
-    border-radius: 5px;
+td > .pdfImg {
+    width: 1.5em;
+    height: auto;
+    margin-bottom: -5px;
+}
+td a {
+    color: #666;
+    text-decoration: none;
+}
+td a:visited {
+    color: #ccc;
+}
+td a:hover {
+    color: black;
+}
+
+footer {
+    font-style: italic;
+    font-size: .8em;
+    margin: 1em 1em;
+    text-align: center;
 }
 
 
