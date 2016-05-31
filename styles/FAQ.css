@@ -16,6 +16,9 @@ header {
     text-align: center;
     margin: 0 0 .5em 0;
 }
+#nav_ul {
+    margin: .5em;
+}
 #menuIcon {
     position: fixed;
     z-index: 30;
@@ -26,28 +29,27 @@ header {
     width: 40px;
     height: auto;
 }
-#nav_ul {
+.questionBox {
     margin: .5em;
 }
-img {
-    max-width: 100%;
-    height:auto;
+.questionBox > h6 {
+    display: block;
+    padding: .8em;
+    background-color: #666;
+    color: white;
+    border-radius: 5px;
+}
+.answerBox {
+    margin: .5em;
+}
+.answerBox > p {
+    display: block;
+    padding: .5em;
+    border: solid 1px lightgray;
+    border-radius: 5px;
 }
 
-#galleryPics ul {
-    text-align: center;
-    list-style-type: none;
-}
-#galleryPics li {
-    display: inline-block;
-    font-size: .8em;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-#galleryPics img {
-    width: 150px;
-    padding: 5px;
-    margin: 5px 5px 0;
-    border: solid 1px #999;
-    display: block; /* makes the captions next to the images. */
-}
+
+
+
+
