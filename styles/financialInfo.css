@@ -20,7 +20,7 @@ header {
 }
 /*----- Nav Bar and Hamberger Icon ----*/
 #nav_ul {
-    margin: 0 1em;
+    margin: 1em;
 }
 #menuIcon {
     position: fixed;
@@ -33,11 +33,10 @@ header {
     height: auto;
 }
 /*----- Question Boxes ----*/
-dl {
-    margin: 0; /* dl has a margin by default */
-}
 .questionBox {
-    margin: .5em 1em .5em 1em;
+    margin: 0 1em;
+}
+.questionBox h6 {
     display: block;
     padding: 1em;
     background-color: #666;
@@ -45,7 +44,7 @@ dl {
     border-radius: 5px;
     cursor: pointer;
 }
-.questionBox:active {
+.questionBox h6:active {
     background-color: black;/* We should change this depends on our color theme. */
 }
 .answerBox {
