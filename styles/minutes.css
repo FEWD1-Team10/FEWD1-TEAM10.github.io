@@ -48,9 +48,8 @@ main { /* Table is in <main> */
 table {
     width: 100%; /* makes the table responsive */
 }
-th, td {
+th, td:not(:first-child) {
     text-align: center;
-    width: 33%; /* makes each column take up 1/3 */
 }
 a > .pdfImg {
     width: 1.3em;
