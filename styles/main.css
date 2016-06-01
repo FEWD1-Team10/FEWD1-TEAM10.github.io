@@ -66,14 +66,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     4. Header and Nav
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -113,36 +105,72 @@ header {
 /*+++++++++++++++++++++++++++++++++++
            Navigation Bar
 +++++++++++++++++++++++++++++++++++*/
-
-#nav_ul {
-    margin: 1em;
-}
-
+/*
 ul a {
     margin: 0 1em;
 }
+*/
 
-li.current a {
-    color: red;
+/*------ nav icon / menu icon ------*/
+.menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
 }
 
-
-@media screen and (max-width:767px) {
-    #nav_ul {
-        display: none;
-    }
+.menu-opener {
+  background: #999;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+}
+.menu-opener:hover, .menu-opener.active {
+  background: #666;
 }
 
-@media screen and (min-width:768px) {
-    #menuIcon {
-        display: none;
-    }
-    #container {
-        text-align: center;
-    }
+.menu-opener-inner {
+  background: #fff;
+  height: .5rem;
+  margin-left: .75rem;
+  margin-top: 1.75rem;
+  width: 2.5rem;
 }
-
-
+.menu-opener-inner::before, .menu-opener-inner::after {
+  background: white;
+  content: '';
+  display: block;
+  height: .5rem;
+  width: 2.5rem;
+}
+.menu-opener-inner::before {
+  -webkit-transform: translateY(-0.75rem);
+  -ms-transform: translateY(-0.75rem);
+  transform: translateY(-0.75rem);
+}
+.menu-opener-inner::after {
+  -webkit-transform: translateY(0.25rem);
+  -ms-transform: translateY(0.25rem);
+  transform: translateY(0.25rem);
+}
+.menu-opener-inner.active {
+  background: transparent;
+}
+.menu-opener-inner.active::before {
+  -webkit-transform: translateY(0rem) rotate(-45deg);
+  -ms-transform: translateY(0rem) rotate(-45deg);
+  transform: translateY(0rem) rotate(-45deg);
+}
+.menu-opener-inner.active::after {
+  -webkit-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+  -ms-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+  transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+}
 
 /*
 #nav_ul {
@@ -165,6 +193,7 @@ li.current a {
     font-size: 1.2em;
     padding: .5em;
 }
+
 #nav_ul a:hover {
     color: orange;
 }
@@ -219,8 +248,16 @@ li.current a {
 /*+++++++++++++++++++++++++++++++++++
               Slide Show
 +++++++++++++++++++++++++++++++++++*/
+#container {
+    max-width: 100%;
+    margin: 1em;
+}
+.slideShow_container  {
+    max-width: 1200px;
+    margin: auto;
+}
 
-    .rslides {
+.rslides {
   position: relative;
   list-style: none;
   overflow: hidden;
@@ -304,8 +341,8 @@ li.current a {
                 opacity:1;
             }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    5. Main and Body
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+                    5. Main and Body */
+
 
 .box {
     margin: 35px 20px;
@@ -324,22 +361,6 @@ li.current a {
 .text-center {
     text-align: center;
 }
-
-@media screen and (min-width:768px) {
-    #centerMenu {
-        text-align: center;
-    }
-    .box {
-        max-width: 205px;
-        float: left;
-    }
-    .text-center {
-        min-width: 768px;
-        display: inline-block;
-    }
-    
-}
-
 
 
 
