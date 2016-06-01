@@ -14,10 +14,22 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' /> <!-- Google Font "Poiret One"-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
     <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
     <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
     <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
     
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+        
+    <script>
+        $(document).ready(function() {
+            $("a#menuIcon").click(function(event) {
+                event.preventDefault();
+                $('#nav_ul').toggle();
+            });
+            
+        });
+    </script>
     
     
  
@@ -28,47 +40,50 @@
 <header>
     
     <div id="logo">
-        <h1>La Paz</h1>
-        <h6>Homeowners Association</h6>
+        <h1><a href="index.html">La Paz</a></h1>
+        <h6><a href="index.html">Homeowners Association</a></h6>
     </div>
     
     <a id="menuIcon" href="#"><img src="images/menuIcon.png" alt="menu icon" /></a>
         
-        <ul id="nav_ul" class="sm sm-clean"> 
-            <li><a href="#">HOA</a></li>
+    <ul id="nav_ul" class="sm sm-clean"> 
+            <li class="current"><a href="#">HOA</a></li>
             <li><a href="#">Property Info</a>
                 <ul id="pi_ul">
-                    <li><a href="pages/photos.html">Photos</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="../propertyInfo/FAQ.html">FAQ</a></li>
+                    <li><a href="../propertyInfo/photos.html">Photos</a></li>
+                    <li><a href="../propertyInfo/condoPlans.html">Condo Plans</a></li>
+                    <li><a href="#">Proposed Trolley Line Info</a></li>
                 </ul>
             </li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Forms</a>
+            <li><a href="#">Resources</a>
                 <ul id="forms_ul">
-                    <li><a href="#">Financial Info</a></li>
-                    <li><a href="#">Minutes &#38; Agendas</a></li>
-                    <li><a href="#">Archives</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="#">Minutes</a></li>
+                    <li><a href="financials.html">Financials</a></li>
+                    <li><a href="governingDocs.html">Governing Docs</a></li>
+                    <li><a href="#">Architectural Info</a></li>
+                    <li><a href="#">Newsletters</a></li>
                 </ul>
             </li>
             <li><a href="#">Contact</a></li>
         </ul>
 </header>
-
+<div id="container">
 <div class="slideShow_container">
     <ul class="rslides">
-        <li><img src="images/slideshow1.jpg" alt="main gate"></li>
-        <li><img src="images/slideshow2.jpg" alt="pool area"></li>
-        <li><img src="images/slideshow3.jpg" alt="path"></li>
+        <li><a href="pages/gallery.html"><img src="images/slideshow1.jpg" alt="main gate"></a></li>
+        <li><a href="pages/gallery.html"><img src="images/slideshow2.jpg" alt="pool area"></a></li>
+        <li><a href="pages/gallery.html"><img src="images/slideshow3.jpg" alt="path"></a></li>
     </ul>
 </div>
-
- <section id="service">
+</div>
+ <section id="centerMenu">
     <div class="container">
-        <div class="row">
-        </div>
         <div class="row text-center">
             <div class="box">
-                <a class="contact" href="#"><img src="images/contact.png" alt="contact La Paz" width="50%"></img></a>
+                <a class="contact" href="#"><img src="images/contact.png" alt="contact La Paz" width="50%"></a>
                 <h4 class="service-heading"><a class="contact" href="#">CONTACT</a></h4>
                 <p id="contact" class="text-muted mobileHide">Find important contact information for property management and other services.</p>
             </div>
@@ -88,6 +103,8 @@
 
 
 <footer>
+
+<a href="index.html">&copy; 2016, La Paz Homeowners Association</a>
 
 </footer>
     
