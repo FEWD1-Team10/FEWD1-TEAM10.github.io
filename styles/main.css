@@ -77,12 +77,14 @@ header {
     font-family: "Poiret One";
     text-align: center;
     margin: 0 auto;
+    font-weight: bold;
 }
 #logo > h1 a {
     text-decoration: none;
     color: #333;
 }
 #logo > h6 {
+    font-weight: bold;
     font-size: 1.3em;
     font-family: "Poiret One";
     text-align: center;
@@ -105,11 +107,9 @@ header {
 /*+++++++++++++++++++++++++++++++++++
            Navigation Bar
 +++++++++++++++++++++++++++++++++++*/
-/*
-ul a {
-    margin: 0 1em;
+.hide {
+    display: none; /* you don't see the nav bar when you start/refresh the page. */
 }
-*/
 
 /*------ nav icon / menu icon ------*/
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
@@ -172,85 +172,13 @@ ul a {
   transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
 }
 
-/*
-#nav_ul {
-    display: none;
-    position: relative;
-    background-color: black;
-    opacity: .8;
-    width: 100%;
-    height: 100%;
-    padding-left: 0;
-    text-align: center;
-}
-#nav_ul li {
-    list-style-type: none;
-}
-#nav_ul a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: .5em;
-}
-
-#nav_ul a:hover {
-    color: orange;
-}
-#nav_ul ul a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-}
-#nav_ul li:hover #pi_ul,  #nav_ul li:hover #forms_ul {
-    display: block;
-}
-#nav_ul #pi_ul {
-    display: none;
-    background-color: white;
-    position: absolute;
-    top: 200px;
-    left: 180px;
-    width: 150px;
-    padding-left: 0;
-}
-#nav_ul #pi_ul a {
-    color: black;
-    background-color: white;
-}
-#nav_ul #pi_ul a:hover {
-    color: orange;
-}
-#nav_ul #pi_ul li {
-    list-style-type: none;
-}
-#nav_ul #forms_ul {
-    display: none;
-    background-color: white;
-    position: absolute;
-    top: 290px;
-    left: 180px;
-    width: 200px;
-    padding-left: 0;
-}
-#nav_ul #forms_ul a {
-    color: black;
-}
-#nav_ul #forms_ul a:hover {
-    color: orange;
-}
-#nav_ul #forms_ul li {
-    list-style-type: none;
-}
-*/
 
 /*+++++++++++++++++++++++++++++++++++
               Slide Show
 +++++++++++++++++++++++++++++++++++*/
 #container {
     max-width: 100%;
-    margin: 1em;
+    margin: 0 1em;
 }
 .slideShow_container  {
     max-width: 1200px;
@@ -288,61 +216,153 @@ ul a {
   width: 100%;
   border: 0;
   }
-            /* page ination image controls */
-            .slideShow_container {
-                max-width: 1200px;
-                position: relative;
-            }
-            .rslides_tabs {
-                list-style-type: none;
-                position: absolute;
-                bottom:0;
-                left:50%;
-                z-index: 5;
-            }
-            .rslides_tabs li {
-                display: inline-block;
-                margin:0 5px 5px;
-            }
-            .rslides_tabs a {
-                color:#fff;
-                text-decoration: none;
-                width:10px;
-                height:10px;
-                border:solid 2px #fff;
-                background-color:#fff;
-                background-color:rgba(255,255,255,.8);
-                display: inline-block;
-                text-indent: -9999px;
-                border-radius: 15px;
-            }
-            .rslides_here a {
-                background-color:#333;
-                background-color:rgba(7,156,200,.8);
-            }
-            /* next/previous buttons */
-            .rslides_nav {
-                text-decoration: none;
-                width:38px;
-                height: 61px;
-                background:url(images/navArrows.png) no-repeat left top;
-                display: inline-block;
-                position: absolute;
-                top:40%;
-                z-index: 5;
-                text-indent: -9999px;
-                opacity: .7;
-            }
-            .rslides_nav.next {
-                right:0;
-                background-position: right top;
-            }
-            .rslides_nav:active {
-                opacity:1;
-            }
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    5. Main and Body */
 
+
+
+/*-----page ination image controls(Jose's)------*/
+.slideShow_container {
+    max-width: 1200px;
+    position: relative;
+}
+.rslides_tabs {
+    list-style-type: none;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    z-index: 5;
+}
+.rslides_tabs li {
+    display: inline-block;
+    margin:0 5px 5px;
+}
+.rslides_tabs a {
+    color:#fff;
+    text-decoration: none;
+    width:10px;
+    height:10px;
+    border:solid 2px #fff;
+    background-color:#fff;
+    background-color:rgba(255,255,255,.8);
+    display: inline-block;
+    text-indent: -9999px;
+    border-radius: 15px;
+}
+.rslides_here a {
+    background-color:#333;
+    background-color:rgba(7,156,200,.8);
+}
+/* next/previous buttons */
+.rslides_nav {
+    text-decoration: none;
+    width:38px;
+    height: 61px;
+    background:url(images/navArrows.png) no-repeat left top;
+    display: inline-block;
+    position: absolute;
+    top:40%;
+    z-index: 5;
+    text-indent: -9999px;
+    opacity: .7;
+}
+.rslides_nav.next {
+    right:0;
+    background-position: right top;
+}
+.rslides_nav:active {
+    opacity:1;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    5. Main and Body 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++++++++++++++++++
+       Table (condoPlans.html)
++++++++++++++++++++++++++++++++++++*/
+#main_condoPlans { /* Table is in <main> */
+    margin: 0 1em; /* Gives table a margin on both sides */
+}
+table {
+    width: 100%; /* makes the table responsive */
+}
+th, td:not(:first-child) {
+    text-align: center;
+    
+}
+a > .pdfImg {
+    width: 1.3em;
+    height: auto;
+    margin-bottom: -5px;
+}
+td a {
+    color: #666;
+    text-decoration: none;
+}
+td a:visited {
+    color: #ccc;
+}
+td a:hover {
+    color: black;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+       Question Boxes (FAQ.html)
++++++++++++++++++++++++++++++++++++*/
+dl {
+    margin: 0; /* dl has a margin by default */
+}
+.questionBox {
+    margin: .5em 0 .5em 0;
+    display: block;
+    padding: 1em;
+    background-color: #666;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.questionBox:active {
+    background-color: black;/* We should change this depends on our color theme. */
+}
+.answerBox {
+    line-height: 1.6em;
+    margin: 0;
+    padding: 1em;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+       Gallery (photos.html)
++++++++++++++++++++++++++++++++++++*/
+
+#links img {
+    max-width: 100%;
+    height:auto;
+}
+#galleryPics ul {
+    text-align: center;
+    list-style-type: none;
+}
+#galleryPics li {
+    display: inline-block;
+    font-size: .8em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#galleryPics img {
+    width: 150px;
+    padding: 5px;
+    margin: 5px 5px 0;
+    border: solid 1px #999;
+    display: block; /* makes the captions next to the images. */
+}
+
+
+
+
+.jpegImg {
+    width: 25px;
+    height: auto;
+}
 
 .box {
     margin: 35px 20px;

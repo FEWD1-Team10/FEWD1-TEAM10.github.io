@@ -19,9 +19,8 @@
         <link href='../../plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
         <link href='../../plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
         
-        <link rel="stylesheet" href="../../styles/propertyInfo/condoPlans.css" /><!--general CSS-->
+        <link rel="stylesheet" href="../../styles/main.css" /><!--general CSS-->
         
-             
 </head>
     
     
@@ -33,19 +32,20 @@
             <h6>Homeowners Association</h6>
         </div>
 
-        <a id="menuIcon" href="#"><img src="../../images/menuIcon.png" alt="menu icon" /></a>
-
-        <ul id="nav_ul" class="sm sm-clean"> 
+        <nav class="menu-opener" id="menuIcon"><!-- makes the menu icon from hamberger to X shape -->
+            <div class="menu-opener-inner"></div>
+        </nav>
+        
+        <ul id="nav_ul" class="sm sm-clean hide"> 
             <li><a href="#">HOA</a></li>
             <li><a href="#">Property Info</a>
                 <ul id="pi_ul">
                     <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="photos.html">Photos</a></li>
                     <li><a href="#">Condo Plans</a></li>
-                    <li><a href="#">Proposed Trolley Line Info</a></li>
+                    <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
                 </ul>
             </li>
-            <li><a href="#">Services</a></li>
             <li><a href="#">Resources</a>
                 <ul id="forms_ul">
                     <li><a href="../resources/forms.html">Forms</a></li>
@@ -61,7 +61,7 @@
 
     </header>
         
-    <main>
+    <main id="main_condoPlans">
         <table>
             <tr>
                 <th>File Name</th>
@@ -111,8 +111,6 @@
     </footer>
         
         
-        
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><!--for Smart Menus-->
     <script src="../../plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--for Smart Menus-->
     <script src="../../js/navbar.js"></script><!--for Smart Menus-->

@@ -17,36 +17,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
     <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
     <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
-    <link href="styles/main.css" type="text/css" rel="stylesheet" />
-    
-    <script src="http://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-        
-    <script>
-        $(document).ready(function() {
-            $("a#menuIcon").click(function(event) {
-                event.preventDefault();
-                $('#nav_ul').toggle();
-            });
-            
-        });
-    </script>
+    <link href="styles/main.css" type="text/css" rel="stylesheet" />  
+
     
     
  
 </head>
 
 <body>
-
-<header>
+    <div id="container">
+    <header>
     
     <div id="logo">
         <h1><a href="index.html">La Paz</a></h1>
         <h6><a href="index.html">Homeowners Association</a></h6>
     </div>
     
-    <a id="menuIcon" href="#"><img src="images/menuIcon.png" alt="menu icon" /></a>
+    <nav class="menu-opener" id="menuIcon"><!-- makes the menu icon from hamberger to X shape -->
+            <div class="menu-opener-inner"></div>
+    </nav>
         
-    <ul id="nav_ul" class="sm sm-clean"> 
+    <ul id="nav_ul" class="sm sm-clean hide"> 
             <li class="current"><a href="#">HOA</a></li>
             <li><a href="#">Property Info</a>
                 <ul id="pi_ul">
@@ -56,7 +47,6 @@
                     <li><a href="#">Proposed Trolley Line Info</a></li>
                 </ul>
             </li>
-            <li><a href="#">Services</a></li>
             <li><a href="#">Resources</a>
                 <ul id="forms_ul">
                     <li><a href="forms.html">Forms</a></li>
@@ -70,7 +60,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
 </header>
-<div id="container">
+
 <div class="slideShow_container">
     <ul class="rslides">
         <li><a href="pages/gallery.html"><img src="images/slideshow1.jpg" alt="main gate"></a></li>
@@ -78,9 +68,9 @@
         <li><a href="pages/gallery.html"><img src="images/slideshow3.jpg" alt="path"></a></li>
     </ul>
 </div>
-</div>
+
  <section id="centerMenu">
-    <div class="container">
+    <div class="container"><!--don't get confused with #container above-->
         <div class="row text-center">
             <div class="box">
                 <a class="contact" href="#"><img src="images/contact.png" alt="contact La Paz" width="50%"></a>
@@ -108,15 +98,15 @@
 
 </footer>
     
-    
+
     <!-- Here are all the script tags -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script src="plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!--for smartmenus-->
+    <script src="js/responsiveslides.min.js"></script><!--for Slide Show-->
+    <script src="plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--for smartmenus-->
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
     
-    
+    </div><!--#container close-->
 </body>
 
 </html>
