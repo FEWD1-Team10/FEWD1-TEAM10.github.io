@@ -66,14 +66,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     4. Header and Nav
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -113,11 +105,6 @@ header {
 /*+++++++++++++++++++++++++++++++++++
            Navigation Bar
 +++++++++++++++++++++++++++++++++++*/
-
-#nav_ul {
-    margin: 1em;
-}
-
 /*
 ul a {
     margin: 0 1em;
@@ -133,7 +120,7 @@ ul a {
 .menu-opener {
   background: #999;
   cursor: pointer;
-  height: 64px;
+  height: 40px;
   position: absolute;
   top: 1%;
   right: 1%;
@@ -141,7 +128,7 @@ ul a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 64px;
+  width: 40px;
 }
 .menu-opener:hover, .menu-opener.active {
   background: #666;
@@ -185,29 +172,6 @@ ul a {
   transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
 }
 
-
-
-
-
-
-
-@media screen and (max-width:767px) {
-    #nav_ul {
-        display: none;
-    }
-}
-
-@media screen and (min-width:768px) {
-    #menuIcon {
-        display: none;
-    }
-    #container {
-        text-align: center;
-    }
-}
-
-
-
 /*
 #nav_ul {
     display: none;
@@ -229,6 +193,7 @@ ul a {
     font-size: 1.2em;
     padding: .5em;
 }
+
 #nav_ul a:hover {
     color: orange;
 }
@@ -283,10 +248,16 @@ ul a {
 /*+++++++++++++++++++++++++++++++++++
               Slide Show
 +++++++++++++++++++++++++++++++++++*/
-.slideShow_container > .rslides {
-    margin: 0 1em;
+#container {
+    max-width: 100%;
+    margin: 1em;
 }
-    .rslides {
+.slideShow_container  {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.rslides {
   position: relative;
   list-style: none;
   overflow: hidden;
@@ -370,8 +341,8 @@ ul a {
                 opacity:1;
             }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    5. Main and Body
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+                    5. Main and Body */
+
 
 .box {
     margin: 35px 20px;
@@ -390,22 +361,6 @@ ul a {
 .text-center {
     text-align: center;
 }
-
-@media screen and (min-width:768px) {
-    #centerMenu {
-        text-align: center;
-    }
-    .box {
-        max-width: 205px;
-        float: left;
-    }
-    .text-center {
-        min-width: 768px;
-        display: inline-block;
-    }
-    
-}
-
 
 
 
