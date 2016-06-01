@@ -1,0 +1,211 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8" />
+        <!-- make sure they add this so that it actually is responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact | La Paz HOA</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' /> <!-- Google Font "Poiret One"-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
+        <link rel="stylesheet" href="../../styles/normalize.css" /><!--Normalize-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
+    
+        <link href='../../plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
+        <link href='../../plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+        
+        <link rel="stylesheet" href="../../styles/main.css" type="text/css" />
+        
+        <link rel="stylesheet" href="../../styles/resources/contact.css" /><!--general CSS-->
+                     
+</head>
+    
+    
+<body>
+    <div id="container">    
+    <header>
+        <div id="logo">
+            <h1>La Paz</h1>
+            <h6>Homeowners Association</h6>
+        </div>
+
+<!--        <a id="menuIcon" href="#"><img src="../../images/menuIcon.png" alt="menu icon" /></a>-->
+        <nav class="menu-opener" id="menuIcon">
+            <div class="menu-opener-inner"></div>
+        </nav>
+        
+        
+        
+        
+        <ul id="nav_ul" class="sm sm-clean hide"> 
+            <li><a href="#">HOA</a></li>
+            <li><a href="#">Property Info</a>
+                <ul id="pi_ul">
+                    <li><a href="../propertyInfo/FAQ.html">FAQ</a></li>
+                    <li><a href="../propertyInfo/photos.html">Photos</a></li>
+                    <li><a href="../propertyInfo/condoPlans.html">Condo Plans</a></li>
+                    <li><a href="#">Proposed Trolley Line Info</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Resources</a>
+                <ul id="forms_ul">
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="minutesPage1.html">Minutes</a></li>
+                    <li><a href="financials.html">Financials</a></li>
+                    <li><a href="governingDocs.html">Governing Docs</a></li>
+                    <li><a href="#">Architectural Info</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </header>
+        
+    <main>
+        <article class="article-interior">
+                <h1>Contact Us</h1>
+                
+                <!-- form -->
+                <form id="form-contact" action="form-parser.php" method="post" autocomplete="on">
+                    
+                    <p>Before filling out this contact form, please consider visiting our <a href="../propertyInfo/FAQ.html">frequently asked questions (FAQ)</a> page.</p>
+                    
+                    <fieldset id="genInfo">
+                    <legend>Your information</legend>
+                        <ol>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="name" title="Name" placeholder="Please enter your full name" required autofocus pattern="[a-zA-Z ]+" />
+                            </li>
+                            <li>
+                                <label for="phone">Phone:</label>
+                                <input type="tel" name="phone" id="phone" title="Phone" placeholder="Day contact" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" title="Email" placeholder="name@domain.com" required />
+                            </li>
+                            <li>
+                                <label for="number">Unit Number:</label>
+                                <input type="unit" name="unit" id="unit" title="Unit Number" placeholder="Where you live." />
+                            </li>
+                        </ol>
+                    </fieldset>
+                    <fieldset id="otherInfo">
+                        <legend>More optional information</legend>
+                        <p>How should we direct your comments/questions?</p>
+                        <ol class="radioBtnSet">
+                            <li>
+                                <input type="radio" name="directTo" id="genInfo" value="gen" />
+                                <label for="GeneralInformation">General Information</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="directTo" id="HOA" value="hoa" />
+                                <label for="HOAservices">HOA Services/Issues</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="directTo" id="landProp" value="land" />
+                                <label for="LandProperty">Land and Property</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="directTo" id="maintDev" value="maint" />
+                                <label for="MaintenanceDevelopments">Maintenance and Developments</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="directTo" id="other" value="other" />
+                                <label for="other">Other</label>
+                                <input type="text" name="directTo" id="box" title="otherOptions" pattern="\d{1,4}" />
+                            </li>
+                        </ol>
+                        
+                        <legend>How are you connected to La Paz HOA?</legend>
+                        <p>You may check more than one.</p>
+                        <ol class="checkSet">
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="hoaBoard" value="HOA board member" />
+                                <label for="HOAboardMember">I am an HOA board member.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="aHomeowner"  value="Homeowner" />
+                                <label for="homeowner">I am a homeowner at La Paz.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="aRenter"  value="Renter" />
+                                <label for="renter">I am a renter at La Paz.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="aContractor"  value="Contractor" />
+                                <label for="contractor">I am a contractor at La Paz.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="aSolicitor"  value="Solicitor" />
+                                <label for="solicitor">I am a solicitor.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="anRenter"  value="Interested Renter" />
+                                <label for="interestedRenter">I am an interested renter.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="anBuyer"  value="Interested Buyer" />
+                                <label for="interestedBuyer">I am an interested buyer.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="connectedTo" id="noConnection"  value="No Connection" />
+                                <label for="noConnection">I have no connection in any way.</label>
+                            </li>
+                        </ol>
+                        
+                        <div class="dropChoice">
+                            <label for="contactWho">Who would you like to contact?</label>
+                            <select name="contact" id="contactTo">
+                                <option >Choose:</option>
+                                <option value="Any HOA board member">Any HOA board member.</option>
+                                <option value="Any homeowner">Any homeowner.</option>
+                                <option value="Administrative staff">Administrative staff.</option>
+                                <option value="Maintenance staff">Maintenance staff.</option>
+                                <option value="Specific individual">Specific individual.</option>
+                                <option value="Agent recommendation">Agent recommendation.</option>
+                                <option value="Bueller Bueller Bueller">Anybody.</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset id="comments-questions">
+                    
+                        
+                        <label for="comment" class="commentLabel">Additional questions or comments</label>
+                        <textarea name="comment" id="comment" class="longText"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+                <!-- end form -->
+                <div class="mapContainer">
+                    <div class="mapHolder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1464801773234!6m8!1m7!1sTCmcPtBHL0-dcSM-hN2z4A!2m2!1d32.85560578982614!2d-117.2281629510737!3f332.86983974671284!4f-13.27964012429996!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+        
+            </article>
+    </main>
+        
+    <footer>
+        &copy; 2016, La Paz Homeowners Association
+    </footer>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><!--for Smart Menus-->
+    <script src="../../plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--for Smart Menus-->
+    <script src="../../js/navbar.js"></script><!--for Smart Menus-->
+   
+        
+
+    </div> <!--#container close-->
+</body>
+    
+</html>

@@ -1,0 +1,144 @@
+/*
+    colors:
+        light blue: #dceef8
+        medium blue: #2fa1e0
+        dark blue: #243a6c  
+        dark navy blue: #0a193b
+        regular links: #196a96
+        hover links: #107571
+*/
+/*embedded fonts  */
+header, nav, section, aside, article, footer, video, audio, main {      display: block;
+}
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    position: relative;
+}
+
+main{
+    background-color:white;
+    padding-bottom:9em;
+}
+
+.mapHolder {
+    height:0;
+    padding-bottom:60%;
+    position: relative;
+    margin-top:1em;
+}
+.mapHolder iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    max-width:500px;
+    height:100%;
+    max-height:300px;
+}
+
+/* form rules */
+#form-contact {
+    width:95%;
+    margin:0 auto 1em;
+}
+fieldset {
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    display: block;
+    padding:20px 10px 5px;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-bottom: solid 3px;
+    width:100%;
+    text-align: center;
+    margin-bottom:.75em;
+}
+input, textarea {
+    background-color:#dceef8;
+    padding:5px;
+    margin:0;
+    border:1px #999 solid;
+    width: 50%
+}
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+input#form-sponsorAmt {
+    width:2.5em;
+}
+textarea {
+    width:60%;
+    min-height:6em;
+}
+#form-contact ol {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#form-contact li {
+    padding-bottom: 10px;
+} 
+#form-contact .radioBtnSet li, #form-contact .checkSet li  {
+    display: inline-block;
+    margin-right:8px;
+}
+#form-contact label {
+    width:30%;
+    display: inline-block;
+    text-align: right;
+}
+#form-contact .radioBtnSet label, #form-contact .dropChoice label, #form-contact .checkSet label {
+    width: auto;
+}
+button[type=submit] {
+    color:#fff;
+    background-color:#243a6c;
+    padding:5px 15px;
+    border-radius:8px;
+    box-shadow:2px 2px 4px #999;
+    margin: 1em auto 0;
+    display: block;
+}
+button[type=submit]:hover {
+    background-color:#666;
+}
+.commentLabel {
+    float:left;
+    padding-right:.5em;
+}
+.thanks {
+    margin:-8px 0 1em;
+    font-style: italic;
+    color:#999;
+}
+/* end form rules */
+
+
+/* for larger screens */
+@media screen and (min-width:670px) { /* MEDIA QUERIES */
+    body {
+        max-width: 1000px; /* set a maximum width for the page */
+        margin: 0 auto; /* horizontally center it as  a block */
+    }
+    #form-contact {
+        width: 50%;
+        margin: 0 10px;
+    }
+    .mapContainer {
+        width: 45%;
+        position: absolute;
+        top: 85px;
+        right: 15px;
+    }
+    .article-interior {
+        position: relative;
+    }
+    
+}
