@@ -50,6 +50,7 @@ table {
 }
 th, td:not(:first-child) {
     text-align: center;
+    
 }
 a > .pdfImg {
     width: 1.3em;
