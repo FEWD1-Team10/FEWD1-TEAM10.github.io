@@ -4,6 +4,6 @@ $(document).ready(function() {
     $('#nav_ul').smartmenus();
     $('#menuIcon').on('click', function(){
         $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
-        $('#nav_ul').fadeToggle(300);
+        $('#nav_ul').fadeToggle(400);
     });
 }); 
