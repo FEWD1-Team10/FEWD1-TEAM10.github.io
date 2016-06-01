@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <!-- make sure they add this so that it actually is responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Property Info - Photos</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' /> <!-- Google Font "Poiret One"-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
+        <link rel="stylesheet" href="../../styles/normalize.css" /><!--Normalize-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
+        <link href='../../plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
+        <link href='../../plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><!--for Gallery-->
+        <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"><!--for Gallery-->
+        <link rel="stylesheet" href="../../styles/propertyInfo/bootstrap-image-gallery.min.css" /><!--for Gallery-->
+        <link rel="stylesheet" href="../../styles/propertyInfo/photos.css" /><!--general CSS-->
+        
+
+        
+    </head>
+    
+    <body>
+        
+        
+        <header>
+        <div id="logo">
+            <h1>La Paz</h1>
+            <h6>Homeowners Association</h6>
+        </div>
+
+        <a id="menuIcon" href="#"><img src="../../images/menuIcon.png" alt="menu icon" /></a>
+
+        <ul id="nav_ul" class="sm sm-clean"> 
+            <li><a href="#">HOA</a></li>
+            <li><a href="#">Property Info</a>
+                <ul id="pi_ul">
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="condoPlans.html">Condo Plans</a></li>
+                    <li><a href="#">Proposed Trolley Line Info</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Resources</a>
+                <ul id="forms_ul">
+                    <li><a href="../resources/forms.html">Forms</a></li>
+                    <li><a href="../resources/minutesPage1.html">Minutes</a></li>
+                    <li><a href="../resources/financials.html">Financials</a></li>
+                    <li><a href="../resources/governingDocs.html">Governing Docs</a></li>
+                    <li><a href="#">Architectural Info</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        </header>
+        
+        <main>
+                
+            <section id="galleryPics">
+                <ul id="links">
+                    <li><a href="../../images/slideshow1.jpg" title="School of Sargos" data-gallery><img src="../../images/slideshow1.jpg" alt="sargo fish" />Sargo School</a></li>
+                    <li><a href="../../images/slideshow2.jpg" title="Garabaldi, CA state fish" data-gallery><img src="../../images/slideshow2.jpg" alt="garabaldi" />Garabaldi</a></li>
+                    <li><a href="../../images/slideshow3.jpg" title="Sheeps Head" data-gallery><img src="../../images/slideshow3.jpg" alt="Sheeps Head" />Sheeps Head</a></li>
+                    <li><a href="../../images/slideshow4.jpg" title="Halibut" data-gallery><img src="../../images/slideshow4.jpg" alt="Halibut" />Halibut</a></li>
+                    <li><a href="../../images/slideshow5.jpg" title="Sculpin" data-gallery><img src="../../images/slideshow5.jpg" alt="Sculpin" />Sculpin</a></li>
+                    <li><a href="../../images/slideshow6.jpg" title="Sargos" data-gallery><img src="../../images/slideshow6.jpg" alt="Sargos" />Sargos</a></li>
+                    <li><a href="../../images/slideshow7.jpg" title="Bat Ray" data-gallery><img src="../../images/slideshow7.jpg" alt="Bat Ray" />Bat Ray</a></li>
+                    <li><a href="../../images/slideshow8.jpg" title="Bat Ray" data-gallery><img src="../../images/slideshow8.jpg" alt="Bat Ray" />Bat Ray</a></li>
+                    <li><a href="../../images/slideshow9.jpg" title="Angel Ray" data-gallery><img src="../../images/slideshow9.jpg" alt="Angel Ray" />Angel Ray</a></li>
+                    <li><a href="../../images/slideshow10.jpg" title="Horn Shark" data-gallery><img src="../../images/slideshow10.jpg" alt="Horn Shark" />Horn Shark</a></li>
+
+                </ul>
+            </section>
+
+            
+        </main>
+        
+        <footer>
+            
+            
+            
+            <div id="copyright">&copy; La Paz Homeowners Association, 2016</div>
+        </footer>
+        
+        
+        
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                Next
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--for Smart Menus and Photo Gallery-->
+        <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script><!--for Photo Gallery-->  
+        <script src="../../js/bootstrap-image-gallery.min.js"></script><!--for Photo Gallery-->         
+        <script src="../../plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--Nav Bar-->
+        <script src="../../js/navbar.js"></script><!--Nav Bar-->
+        
+        
+        
+
+    
+    </body>
+    
+</html>
