@@ -1,0 +1,158 @@
+body {
+    font-family: "Roboto Slab", Verdana;
+}
+header {
+    padding: .1em;
+}
+
+
+
+/*----- "La Paz Homeowners Association" Logo ----*/
+#logo > h1 {
+    font-size: 6em;
+    font-family: "Poiret One";
+    text-align: center;
+    margin: 0 auto;
+}
+#logo > h6 {
+    font-size: 1.3em;
+    font-family: "Poiret One";
+    text-align: center;
+    margin: 0 0 .5em 0;
+}
+
+
+
+
+/*----- Nav Bar and Hamberger Icon ----*/
+.hide {   /* This makes the nav bar hidden when you start the page.                 !!!!!!!!!!!! ADD THIS TO MAIN.CSS!!!!!!!!!!!!!!!!*/
+    display: none;
+}
+#nav_ul {
+    margin: 0 1em;
+}
+
+
+
+.menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.menu-opener {
+  background: #999;
+  cursor: pointer;
+  height: 64px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 64px;
+}
+.menu-opener:hover, .menu-opener.active {
+  background: #666;
+}
+
+.menu-opener-inner {
+  background: #fff;
+  height: .5rem;
+  margin-left: .75rem;
+  margin-top: 1.75rem;
+  width: 2.5rem;
+}
+.menu-opener-inner::before, .menu-opener-inner::after {
+  background: white;
+  content: '';
+  display: block;
+  height: .5rem;
+  width: 2.5rem;
+}
+.menu-opener-inner::before {
+  -webkit-transform: translateY(-0.75rem);
+  -ms-transform: translateY(-0.75rem);
+  transform: translateY(-0.75rem);
+}
+.menu-opener-inner::after {
+  -webkit-transform: translateY(0.25rem);
+  -ms-transform: translateY(0.25rem);
+  transform: translateY(0.25rem);
+}
+.menu-opener-inner.active {
+  background: transparent;
+}
+.menu-opener-inner.active::before {
+  -webkit-transform: translateY(0rem) rotate(-45deg);
+  -ms-transform: translateY(0rem) rotate(-45deg);
+  transform: translateY(0rem) rotate(-45deg);
+}
+.menu-opener-inner.active::after {
+  -webkit-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+  -ms-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+  transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+}
+/*
+#menuIcon {  Hamberger Icon 
+    position: fixed;
+    z-index: 30;
+    top: 2%;
+    right: 2%;
+}
+#menuIcon img {
+    width: 40px;
+    height: auto;
+}
+*/
+main { /* Table is in <main> */
+    margin: 0 1em; /* Gives table a margin on both sides */
+}
+
+
+
+/*----- Table ----*/
+table {
+    width: 100%; /* makes the table responsive */
+}
+th, td:not(:first-child) {
+    text-align: center;
+    
+}
+a > .pdfImg {
+    width: 1.3em;
+    height: auto;
+    margin-bottom: -5px;
+}
+td a {
+    color: #666;
+    text-decoration: none;
+}
+td a:visited {
+    color: #ccc;
+}
+td a:hover {
+    color: black;
+}
+
+footer {
+    font-style: italic;
+    font-size: .8em;
+    margin: 1em 1em;
+    text-align: center;
+}
+
+
+/* media queries for big screen
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+*/
+
+
+
+
+
