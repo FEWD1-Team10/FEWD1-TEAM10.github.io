@@ -180,47 +180,41 @@ header {
     max-width: 100%;
     margin: 0 1em;
 }
-.slideShow_container  {
+#slideShow_container  {
     max-width: 1200px;
     margin: auto;
 }
+.slideShow {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+}
 
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
+.slideShow li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
 
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
+.slideShow li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
 
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
-
-
+.slideShow img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
 
 /*-----page ination image controls(Jose's)------*/
-.slideShow_container {
+#slideShow_container {
     max-width: 1200px;
     position: relative;
 }
@@ -228,19 +222,19 @@ header {
     list-style-type: none;
     position: absolute;
     bottom:0;
-    left:50%;
+    left:45%;
     z-index: 5;
 }
 .rslides_tabs li {
     display: inline-block;
-    margin:0 5px 5px;
+    margin:0 2px 1px;
 }
 .rslides_tabs a {
     color:#fff;
     text-decoration: none;
-    width:10px;
-    height:10px;
-    border:solid 2px #fff;
+    width:15px;
+    height:8px;
+    border:solid 1px #fff;
     background-color:#fff;
     background-color:rgba(255,255,255,.8);
     display: inline-block;
@@ -256,7 +250,7 @@ header {
     text-decoration: none;
     width:38px;
     height: 61px;
-    background:url(images/navArrows.png) no-repeat left top;
+    background:url(../images/navArrows.png) no-repeat left top;
     display: inline-block;
     position: absolute;
     top:40%;
