@@ -283,9 +283,6 @@ header > h3 { /* affects every page */
               index.html
 +++++++++++++++++++++++++++++++++++*/
 
-.box { /* contains icons and the contents */
-    margin: 35px 20px;
-}
 .box img { /* phone, newsletter, location icons */
     width: 30%;
     padding-bottom: .5em;
@@ -425,3 +422,60 @@ footer {
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     8. Media Queries
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width:555px) { /* media queries */
+    
+/*+++++++++++++++++++++++++++++++++++
+            index.html
++++++++++++++++++++++++++++++++++++*/
+    body {
+        max-width: 900px; /* sets max width for the page */
+        margin: 0 auto; /* horizontally center this as a block */
+    }
+    .container {
+        width: 100%;
+    }
+    .container .row p {
+        text-align: left;
+    }
+    .container .box {
+        float: left;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    .box > a {
+        float: left;
+    }
+    .box > .iconWrapper {
+        float: left;
+        width: 30%;
+    }
+    .box > p {
+        width: 100%;        
+    }
+    #menuIcon {
+        display: none;
+    }
+    #nav_ul {
+        position: static;
+        z-index: 25;
+        width: auto;
+        height: auto;
+        display: block;
+        border: 1px solid #bbbbbb;
+        padding: 5px 0;
+        background: white;
+        opacity: 1;
+        -webkit-border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+        -ms-border-radius: 5px !important;
+        -o-border-radius: 5px !important;
+        border-radius: 5px !important;
+    }
+    #nav_ul li a {
+        color: #555;
+    }
+    
+    
+    
+}
