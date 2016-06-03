@@ -97,8 +97,8 @@ header {
 #menuIcon {
     position: fixed;
     z-index: 30;
-    top: 2%;
-    right: 2%;
+    top: 1em;
+    right: 1em;
 }
 #menuIcon img {
     width: 40px;
@@ -107,9 +107,7 @@ header {
 /*+++++++++++++++++++++++++++++++++++
            Navigation Bar
 +++++++++++++++++++++++++++++++++++*/
-.hide {
-    display: none; /* you don't see the nav bar when you start/refresh the page. */
-}
+
 
 /*------ nav icon / menu icon ------*/
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
@@ -171,7 +169,9 @@ header {
   -ms-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
   transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
 }
-
+.hide {
+    display: none; /* you don't see the nav bar when you start/refresh the page. */
+}
 
 /*+++++++++++++++++++++++++++++++++++
               Slide Show
