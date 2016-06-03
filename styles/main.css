@@ -192,7 +192,7 @@ header {
   -ms-transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
   transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
 }
-.hide {
+.hideIt {
     display: none; /* you don't see the nav bar when you start/refresh the page. */
 }
 
@@ -291,7 +291,10 @@ header {
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     5. Main and Body 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
+header > h3 {
+    text-align: center;
+    margin-top: 1em;
+}
 /*+++++++++++++++++++++++++++++++++++
        Table (condoPlans.html)
 +++++++++++++++++++++++++++++++++++*/
