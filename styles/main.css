@@ -131,6 +131,10 @@ header {
     color: deepskyblue;
     text-align: center;
 }
+#nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
+    color: #666; 
+    cursor: default;
+}
 
 /*------ nav icon / menu icon ------*/
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
@@ -195,6 +199,7 @@ header {
 .hideIt {
     display: none; /* you don't see the nav bar when you start/refresh the page. */
 }
+
 
 /*+++++++++++++++++++++++++++++++++++
               Slide Show
