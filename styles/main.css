@@ -475,7 +475,26 @@ footer {
     #nav_ul li a {
         color: #555;
     }
-    
+    #nav_ul li:first-child {
+        margin-top: 0;
+    }
+    #nav_ul li {
+        text-align: center;
+    }
+    #nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
+    color: #eee; 
+    cursor: default;
+    }
+    #nav_ul #currentState { /* Blue underline bar. This lets people know under which menu tab you are */
+        height: 5px;
+        margin-top: 5px;
+        display: block;
+        background-color: deepskyblue;
+    }    
+        
+        
+        
+}
     
     
 }
