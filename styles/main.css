@@ -309,14 +309,36 @@ header > h3 { /* affects every page */
 /*+++++++++++++++++++++++++++++++++++
              HOA.html
 +++++++++++++++++++++++++++++++++++*/
+#hoaHeader > h3 {
+    background: url(../images/20160519_153910.jpg);
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#hoaHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
 article h6 {
     font-weight: bold;
 }
 /*+++++++++++++++++++++++++++++++++++
-       Table (condoPlans.html)
+       condoPlans.html
 +++++++++++++++++++++++++++++++++++*/
 #main_condoPlans { /* Table is in <main> */
     margin: 0 1em; /* Gives table a margin on both sides */
+}
+#condoHeader > h3 {
+    background: url(../images/20160519_153827.jpg);
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#condoHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
 }
 table {
     width: 100%; /* makes the table responsive */
@@ -342,8 +364,19 @@ td a:hover {
 }
 
 /*+++++++++++++++++++++++++++++++++++
-       Question Boxes (FAQ.html)
+               FAQ.html
 +++++++++++++++++++++++++++++++++++*/
+#faqHeader > h3 {
+    background: url(../images/20160519_154329.jpg) bottom;
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#faqHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
 dl {
     margin: 0; /* dl has a margin by default */
 }
@@ -368,9 +401,19 @@ dl {
 }
 
 /*+++++++++++++++++++++++++++++++++++
-       Gallery (photos.html)
+            photos.html
 +++++++++++++++++++++++++++++++++++*/
-
+#galleryHeader > h3 {
+    background: url(../images/20160519_154329.jpg) top;
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#galleryHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
 #links img {
     max-width: 100%;
     height:auto;
@@ -395,6 +438,110 @@ dl {
 .jpegImg {
     width: 25px;
     height: auto;
+}
+/*+++++++++++++++++++++++++++++++++++
+            trolleyInfo.html
++++++++++++++++++++++++++++++++++++*/
+#trolleyHeader > h3 {
+    background: url(../images/3.jpg);
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#trolleyHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+            architectural.html
++++++++++++++++++++++++++++++++++++*/
+#archHeader > h3 {
+    background: url(../images/4.jpg) top;
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#archHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+           financials.html
++++++++++++++++++++++++++++++++++++*/
+#financialsHeader > h3 {
+    background: url(../images/3.jpg) center;
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#financialsHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+            forms.html
++++++++++++++++++++++++++++++++++++*/
+#formsHeader > h3 {
+    background: url(../images/6.jpg) top;
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#formsHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+          governingDocs.html
++++++++++++++++++++++++++++++++++++*/
+#governHeader > h3 {
+    background: url(../images/6.jpg) bottom;
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#governHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+          minutesPage1-3.html
++++++++++++++++++++++++++++++++++++*/
+#minutesHeader > h3 {
+    background: url(../images/slideshow1.jpg);
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#minutesHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+          newsletters.html
++++++++++++++++++++++++++++++++++++*/
+#newsHeader > h3 {
+    background: url(../images/slideshow2.jpg) bottom;
+    padding: .5em;
+    opacity: .6;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#newsHeader > h3:hover {
+    opacity: 1;
+    cursor: default;
 }
 
 
