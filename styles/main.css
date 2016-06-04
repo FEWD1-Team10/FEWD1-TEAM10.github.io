@@ -428,9 +428,10 @@ footer {
 /*+++++++++++++++++++++++++++++++++++
             index.html
 +++++++++++++++++++++++++++++++++++*/
-    body {
-        max-width: 900px; /* sets max width for the page */
-        margin: 0 auto; /* horizontally center this as a block */
+    
+    #container { /* this contains everything except the footer */
+        max-width: 900px; /* sets max width for the page  */
+        margin: 0 auto;
     }
     .container {
         width: 100%;
