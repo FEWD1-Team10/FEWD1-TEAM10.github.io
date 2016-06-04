@@ -228,7 +228,7 @@ body {
     list-style-type: none;
     position: absolute;
     bottom:0;
-    left:45%;
+    left:41%;
     z-index: 5;
 }
 .rslides_tabs li {
@@ -238,18 +238,20 @@ body {
 .rslides_tabs a {
     color:#fff;
     text-decoration: none;
-    width:15px;
-    height:8px;
-    border:solid 1px #fff;
+    width:10px;
+    height:10px;
+    border:solid 2px #fff;
     background-color:#fff;
     background-color:rgba(255,255,255,.8);
     display: inline-block;
+    opacity: .7;
+    margin: .3em;
     text-indent: -9999px;
     border-radius: 15px;
 }
 .rslides_here a {
-    background-color:#333;
-    background-color:rgba(7,156,200,.8);
+    background-color: deepskyblue;
+    opacity: 1;
 }
 
 /*------- next/previous buttons -------*/
@@ -263,7 +265,7 @@ body {
     top:40%;
     z-index: 5;
     text-indent: -9999px;
-    opacity: .7;
+    opacity: .4;
 }
 .rslides_nav.next {
     right:0;
