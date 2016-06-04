@@ -310,7 +310,7 @@ header > h3 { /* affects every page */
              HOA.html
 +++++++++++++++++++++++++++++++++++*/
 #hoaHeader > h3 {
-    background: url(../images/20160519_153910.jpg);
+    background: url(../images/photo1.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -330,7 +330,7 @@ article h6 {
     margin: 0 1em; /* Gives table a margin on both sides */
 }
 #condoHeader > h3 {
-    background: url(../images/20160519_153827.jpg);
+    background: url(../images/photo2.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -367,7 +367,7 @@ td a:hover {
                FAQ.html
 +++++++++++++++++++++++++++++++++++*/
 #faqHeader > h3 {
-    background: url(../images/20160519_154329.jpg) bottom;
+    background: url(../images/photo3.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -404,7 +404,7 @@ dl {
             photos.html
 +++++++++++++++++++++++++++++++++++*/
 #galleryHeader > h3 {
-    background: url(../images/20160519_154329.jpg) top;
+    background: url(../images/photo4.png) top;
     padding: .5em;
     opacity: .6;
     color: white;
@@ -443,7 +443,7 @@ dl {
             trolleyInfo.html
 +++++++++++++++++++++++++++++++++++*/
 #trolleyHeader > h3 {
-    background: url(../images/3.jpg);
+    background: url(../images/photo10.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -458,7 +458,7 @@ dl {
             architectural.html
 +++++++++++++++++++++++++++++++++++*/
 #archHeader > h3 {
-    background: url(../images/4.jpg) top;
+    background: url(../images/photo5.png) top;
     padding: .5em;
     opacity: .6;
     color: white;
@@ -473,7 +473,7 @@ dl {
            financials.html
 +++++++++++++++++++++++++++++++++++*/
 #financialsHeader > h3 {
-    background: url(../images/3.jpg) center;
+    background: url(../images/photo6.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -488,7 +488,7 @@ dl {
             forms.html
 +++++++++++++++++++++++++++++++++++*/
 #formsHeader > h3 {
-    background: url(../images/6.jpg) top;
+    background: url(../images/photo7.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -503,7 +503,7 @@ dl {
           governingDocs.html
 +++++++++++++++++++++++++++++++++++*/
 #governHeader > h3 {
-    background: url(../images/6.jpg) bottom;
+    background: url(../images/photo8.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -518,7 +518,7 @@ dl {
           minutesPage1-3.html
 +++++++++++++++++++++++++++++++++++*/
 #minutesHeader > h3 {
-    background: url(../images/slideshow1.jpg);
+    background: url(../images/photo9.png);
     padding: .5em;
     opacity: .6;
     color: white;
@@ -533,7 +533,7 @@ dl {
           newsletters.html
 +++++++++++++++++++++++++++++++++++*/
 #newsHeader > h3 {
-    background: url(../images/slideshow2.jpg) bottom;
+    background: url(../images/photo10.png);
     padding: .5em;
     opacity: .6;
     color: white;
