@@ -6,31 +6,29 @@
         <meta charset="utf-8" />
         <!-- make sure they add this so that it actually is responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact | La Paz HOA</title>
+        <title>Contact</title>
         
         <!--[if lt IE 9]>
             <script src="js/html5shiv.min.js"></script>
         <![endif]-->
-        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' /> <!-- Google Font "Poiret One"-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
-        <link rel="stylesheet" href="../styles/normalize.css" /><!--Normalize-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
-    
-        <link href='../plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
-        <link href='../plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
         
-        <link rel="stylesheet" href="../styles/main.css" type="text/css" /><!--general CSS-->
-        <link rel="stylesheet" href="../styles/contact.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
+        <link rel="stylesheet" href="styles/normalize.css" /><!--Normalize-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
+        <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
+        <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional) -->
+        <link rel="stylesheet" href="styles/main.css" type="text/css" /><!--general CSS-->
+        <link rel="stylesheet" href="styles/contact.css" /><!--contact page has its own CSS as well-->
                      
 </head>
     
     
 <body>
     <div id="container">    
+        
     <header>
         <div id="logo">
-            <h1>La Paz</h1>
-            <h6>Homeowners Association</h6>
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
         </div>
 
         <nav class="menu-opener" id="menuIcon">
@@ -41,39 +39,41 @@
         
         
         <ul id="nav_ul" class="sm sm-clean hideIt"> 
-            <li><a href="../pages/hoa.html">HOA</a></li>
+            <li><a href="hoa.html">HOA</a></li>
             <li><a href="#">Property Info</a>
                 <ul id="pi_ul">
-                    <li><a href="../pages/propertyInfo/FAQ.html">FAQ</a></li>
-                    <li><a href="../pages/propertyInfo/photos.html">Photos</a></li>
-                    <li><a href="../pages/propertyInfo/condoPlans.html">Condo Plans</a></li>
-                    <li><a href="../pages/propertyInfo/trolleyInfo.html">Proposed Trolley Line Info</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="condoPlans.html">Condo Plans</a></li>
+                    <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
                 </ul>
             </li>
-            <li><a href="#">Resources<span id="currentState"></span></a>
+            <li><a href="#">Resources</a>
                 <ul id="forms_ul">
-                    <li><a href="../pages/resources/forms.html">Forms</a></li>
-                    <li><a href="../pages/resources/minutesPage1.html">Minutes</a></li>
-                    <li><a href="../pages/resources/financials.html">Financials</a></li>
-                    <li><a href="../pages/resources/governingDocs.html">Governing Docs</a></li>
-                    <li><a href="../pages/resources/architectural.html">Architectural Info</a></li>
-                    <li><a href="../pages/resources/newsletters.html">Newsletters</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="minutesPage1.html">Minutes</a></li>
+                    <li><a href="financials.html">Financials</a></li>
+                    <li><a href="governingDocs.html">Governing Docs</a></li>
+                    <li><a href="architectural.html">Architectural Info</a></li>
+                    <li><a href="newsletters.html">Newsletters</a></li>
                 </ul>
             </li>
-            <li><a href="#" id="iamhere">Contact</a></li>
+            <li><a href="#">Contact<span id="currentState"></span></a></li>
         </ul>
 
     </header>
         
+        
     <main>
-        <header>
+        <header id="contactHeader">
             <h3>Contact Us</h3>
         </header>
-                
+               <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1465083579686!6m8!1m7!1ssyZlZyBV5AJh5GZ7D3hmMg!2m2!1d32.85556096608711!2d-117.2282155702456!3f352.7203147396783!4f5.793318567102105!5f0.7820865974627469" height="325px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
         <!-- form -->
         <form id="form-contact" action="form-parser.php" method="post" autocomplete="on">
 
-            <p>Before filling out this contact form, please consider visiting our <a href="../propertyInfo/FAQ.html">frequently asked questions (FAQ)</a> page.</p>
+            <p>Before filling out this contact form, please consider visiting our <a href="FAQ.html">frequently asked questions (FAQ)</a> page.</p>
 
             <fieldset id="genInfo">
             <legend>Your information</legend>
@@ -163,7 +163,7 @@
                 <div class="dropChoice">
                     <label for="contactWho">Who would you like to contact?</label>
                     <select name="contact" id="contactTo">
-                        <option >Choose:</option>
+                        <option hidden="hidden" >Choose:</option>
                         <option value="Any HOA board member">Any HOA board member.</option>
                         <option value="Any homeowner">Any homeowner.</option>
                         <option value="Administrative staff">Administrative staff.</option>
@@ -184,25 +184,83 @@
             <button type="submit">Submit</button>
         </form>
         <!-- end form -->
-        <div class="mapContainer">
-            <div class="mapHolder">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1464801773234!6m8!1m7!1sTCmcPtBHL0-dcSM-hN2z4A!2m2!1d32.85560578982614!2d-117.2281629510737!3f332.86983974671284!4f-13.27964012429996!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+        
+        
+        <div class="rightContainer">
+                <div class="rightHolder">
+
+               <h5>Colny La Paz Condominium Association</h5>
+
+Inc 7/84, tax ID #33-0042609<br />
+Streets: Porte La Paz &amp; Rosenda Court<br />
+built 1984/85, control turned over to HOA 5/88<br />
+sub of La Jolla Colony Master Association-McKibbin Co.<br />
+(858) 551-1885<br />
+<br />
+<strong>Management</strong>
+audrey@kanemgt.com<br />
+Kane Management<br />
+<br />
+Mail HOA Checks Here:<br />
+Colony La Paz/PO Box 51126<br />
+Los Angeles, CA 90051-5426<br />
+<br />
+Termites/Bugs/Rodents: 800.696.8565	(Agricultural Pest Control Company)<br />
+<br />
+Lights &amp; Minor Repairs: 760.407.0250 (ResCom)<br />
+<br />
+Pool Maintenance: 760.407.0250 - KEYS $50<br />
+<br />
+Tree Care and Trimming: 619.235.8312 (Western Tree Service)<br />
+<br />
+Trash Pickup: 858.278.6061 (Pacific Waste, pickups on  Mon/Thurs/Sat)<br />
+<br />
+Landscape and Irrigation: 858.549.7611 (Pacific Property Service)<br />
+<br />
+Post Office Sub-Station: 800.275.8777 (University City Sub-Station)<br />
+<br />
+HOA repairs boxes; owners are responsible for replacement keys to mailboxes.<br />
+<br />
+Plumbing: 858.566.7992 (Sun West Plumbing)<br />
+<br />
+Emergency Information and Water Shut-off Maps are posted on pool bulletin board.<br />
+Click here for Water Shut-off info<br />
+<br />
+Patrol Service: 888-294-1200 UPS<br />
+<br />
+Four random drive through patrols at night.<br />
+The Association does not provide security, nor does the Association claim to be a secure facility.   The Association does not guarantee your safety nor the safety of your car or your possessions.  In case of emergency, call 911.<br />
+<br />
+Insurance: all insurance information must be obtained directly from:<br />
+Farmers Insurance agent Phil Schrock (949) 494-7261<br />
+policy 01489-11-40, renews February 5th each year.<br />
+DEDUCTIBLE $5000 There is NO earthquake insurance<br />
+not a conversion, no timeshares, no rental desk, no commercial space<br />
+<br />
+Board Meeting : 2nd Wed, 6pm at Doyle Elementary School in winter; at Porte La Paz pool area in summer<br />
+<br />
+No meeting in April, August, &amp; December<br />
+<br />
+Pet Rules: 2 cats or one dog not more than 20 lbs
+               
+                </div>
         </div>
 
     </main>
+    
         
+    </div> <!--#container close-->
     <footer>
-        &copy; 2016, La Paz Homeowners Association
+        <footer>Content &copy; 2008-2016, La Paz HOA</footer>
     </footer>
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><!--for Smart Menus-->
-    <script src="../plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--for Smart Menus-->
-    <script src="../js/navbar.js"></script><!--for Smart Menus-->
+    <script src="plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--for Smart Menus-->
+    <script src="js/navbar.js"></script><!--for Smart Menus-->
    
         
 
-    </div> <!--#container close-->
+    
 </body>
     
 </html>
