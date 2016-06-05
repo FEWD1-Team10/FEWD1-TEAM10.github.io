@@ -107,9 +107,6 @@ body {
     background-color: black;
     opacity: .88;
 }
-#nav_ul > li {
-    width: 20%;
-}
 #nav_ul li:first-child {
     margin-top: 3%;
 }
@@ -199,7 +196,8 @@ body {
 +++++++++++++++++++++++++++++++++++*/
 #slideShow_container  {
     max-width: 1200px;
-    margin: 2em auto;
+    margin: 1.5em auto;
+    z-index: 0; /* without this, drop-down menu goes behind the slide show */
 }
 .slideShow {
     position: relative;
@@ -228,7 +226,6 @@ body {
     float: left;
     width: 100%;
     border: 0;
-    border-radius: 5px;
 }
 
 #slideShow_container {
@@ -273,7 +270,7 @@ body {
     background:url(../images/navArrows.png) no-repeat left top;
     display: inline-block;
     position: absolute;
-    top:40%;
+    top:36%;
     z-index: 5;
     text-indent: -9999px;
     opacity: .4;
@@ -327,7 +324,12 @@ header > h3 { /* affects every page */
     color: black;
 }
 .columns {
-    padding: 0 1em 3em 1em;
+    padding: 0 1em 1.5em 1em;
+    margin-bottom: 1.5em;
+    border-bottom: solid 3px #eee;
+}
+.columns:nth-child(3) {
+    border-bottom: none;
 }
 .columns img { /* phone, newsletter, location icons */
     width: 25%;
@@ -359,7 +361,7 @@ header > h3 { /* affects every page */
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #hoaHeader > h3:hover {
     opacity: 1;
@@ -381,7 +383,7 @@ article h6 {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #condoHeader > h3:hover {
     opacity: 1;
@@ -423,7 +425,7 @@ td a:hover {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #faqHeader > h3:hover {
     opacity: 1;
@@ -465,7 +467,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #galleryHeader > h3:hover {
     opacity: 1;
@@ -512,7 +514,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #trolleyHeader > h3:hover {
     opacity: 1;
@@ -532,7 +534,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #archHeader > h3:hover {
     opacity: 1;
@@ -552,7 +554,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #financialsHeader > h3:hover {
     opacity: 1;
@@ -572,7 +574,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #formsHeader > h3:hover {
     opacity: 1;
@@ -592,7 +594,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #governHeader > h3:hover {
     opacity: 1;
@@ -612,7 +614,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #minutesHeader > h3:hover {
     opacity: 1;
@@ -632,7 +634,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #newsHeader > h3:hover {
     opacity: 1;
@@ -675,7 +677,7 @@ dl {
     padding: .5em;
     opacity: .6;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
 #contactHeader > h3:hover {
     opacity: 1;
@@ -810,7 +812,11 @@ footer {
 
 
 @media screen and (min-width:600px) { /*-------- Larger than Mobile --------*/
-    
+    #nav_ul.fixedNav {
+        position: fixed;
+        top: 0;
+        left: auto;
+    }
     #container { /* this contains everything except the footer */
         max-width: 800px; /* sets max width for the page  */
         padding: 0 1em;
@@ -821,7 +827,6 @@ footer {
     }
     #nav_ul {
         position: static;
-        z-index: 25;
         width: auto;
         height: auto;
         display: block;
@@ -829,11 +834,6 @@ footer {
         padding: 5px 0 0 0;
         background: white;
         opacity: 1;
-        -webkit-border-radius: 5px !important;
-        -moz-border-radius: 5px !important;
-        -ms-border-radius: 5px !important;
-        -o-border-radius: 5px !important;
-        border-radius: 5px !important;
     }
     #nav_ul li a {
         color: #555;
@@ -844,11 +844,14 @@ footer {
     #nav_ul li {
         text-align: center;
     }
+    #nav_ul > li { /* affects the top menu items only */
+        width: 20%;
+    }
     #nav_ul > li:nth-child(1), #nav_ul > li:nth-child(2), #nav_ul > li:nth-child(5) {
-        width: 15%; /* makes "Home", "HOA" and "Contact" tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */
+        width: 15%; /* makes "Home", "HOA" and "Contact" tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */ 
     }
     #nav_ul > li:nth-child(3), #nav_ul > li:nth-child(4) {
-        width: 27%; /* gives "Property Info" and "Resources" tab more space, or else, their letters overlap each other. */
+        width: 27%;  /* gives "Property Info" and "Resources" tab more space, or else, their letters overlap each other. */
     }
     #nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
     color: #eee; 
@@ -864,18 +867,25 @@ footer {
 /*+++++++++++++++++++++++++++++++++++
       index.html (media queries)
 +++++++++++++++++++++++++++++++++++*/
-        
+    .rslides_nav { /* prev, next button on slide show */
+        top: 42%;
+    }    
     .iconWrapper:hover {
         transform: scale(1.1);
     }
     .columns {
+        border-bottom: none;
+    }
+    .columns:first-child {
         border-right: solid 3px #eee;
         margin-left: 0;
     }
     .columns:nth-child(3) {
-        border: none;
+        border-left: solid 3px #eee;
+        margin-left: 0;
         padding-right: 0;
-    }    
+    }
+    
     
     
     
@@ -900,10 +910,7 @@ footer {
     .columns:first-child {
         padding-left: 0;
     }
-    .columns:nth-child(3) {
-        border: none;
-        padding-right: 0;
-    }  
+    
     
     
     
