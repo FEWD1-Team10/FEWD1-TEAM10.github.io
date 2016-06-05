@@ -1,16 +1,10 @@
 body {
     position: relative;
 }
-
-main{
-    background-color:white;
-    padding-bottom:9em;
-}
-
 .rightHolder {
     position: relative;
-    margin-top:2em;
-    color: #999;
+    top: 230px;
+    left: 0;
 }
 
 /* form rules */

@@ -14,7 +14,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     COLOR GUIDE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-dark gray (logo) : #80828a
+
 
 
 
@@ -25,7 +25,6 @@ dark gray (logo) : #80828a
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     TYPOGRAPHY GUIDE
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Header: "Poiret One", Verdana;
     Body: "Roboto Slab", Verdana;
 
 
@@ -39,7 +38,7 @@ dark gray (logo) : #80828a
     Author: Jose Vargas, Daniel Masterson, Younji Woo
     Project Name: La Paz Homeowners Association
     Ver: 1.0
-    Last Updated: 05-25-2016
+    Last Updated: 06-07-2016
     Notes:
 
 
@@ -63,9 +62,18 @@ body {
     font-family: "Roboto Slab", Verdana;
 }
 
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     4. Header and Nav
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#container {
+    max-width: 100%;
+    margin: 0 1em;
+}
 #logo {
     padding: .1em;
     text-align: center;
@@ -99,6 +107,9 @@ body {
     background-color: black;
     opacity: .88;
 }
+#nav_ul > li {
+    width: 20%;
+}
 #nav_ul li:first-child {
     margin-top: 3%;
 }
@@ -115,7 +126,10 @@ body {
     cursor: default;
 }
 
-/*------ nav icon / menu icon ------*/
+/*+++++++++++++++++++++++++++++++++++
+           Hamburger Icon
++++++++++++++++++++++++++++++++++++*/
+
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
   -webkit-transition: 250ms all;
   transition: 250ms all;
@@ -183,13 +197,9 @@ body {
 /*+++++++++++++++++++++++++++++++++++
               Slide Show
 +++++++++++++++++++++++++++++++++++*/
-#container {
-    max-width: 100%;
-    margin: 0 1em;
-}
 #slideShow_container  {
     max-width: 1200px;
-    margin: auto;
+    margin: 2em auto;
 }
 .slideShow {
     position: relative;
@@ -218,6 +228,7 @@ body {
     float: left;
     width: 100%;
     border: 0;
+    border-radius: 5px;
 }
 
 #slideShow_container {
@@ -274,25 +285,59 @@ body {
 .rslides_nav:active {
     opacity:1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     5. Main and Body 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
 header > h3 { /* affects every page */
     text-align: center;
     margin-top: 1em;
 }
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++
               index.html
 +++++++++++++++++++++++++++++++++++*/
-
-.box img { /* phone, newsletter, location icons */
-    width: 30%;
+.iconWrapper {
+        text-align: center;
+        padding-bottom: 2em;
+    }
+.iconWrapper + p a {
+    text-decoration: none;
+}
+.iconWrapper + p a:hover {
+    color: black;
+}
+.columns {
+    padding: 0 1em 3em 1em;
+}
+.columns img { /* phone, newsletter, location icons */
+    width: 25%;
+    max-width: 90px;
     padding-bottom: .5em;
 }
-.box a {
+.columns a {
     color: #608eaf;
 }
-.box p {
+.columns p {
     margin: 0 auto;
 }
 .service-heading {
@@ -302,9 +347,9 @@ header > h3 { /* affects every page */
     text-decoration: none;
 }
 
-.text-center {
-    text-align: center;
-}
+
+
+
 
 /*+++++++++++++++++++++++++++++++++++
              HOA.html
@@ -323,12 +368,14 @@ header > h3 { /* affects every page */
 article h6 {
     font-weight: bold;
 }
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++
        condoPlans.html
 +++++++++++++++++++++++++++++++++++*/
-#main_condoPlans { /* Table is in <main> */
-    margin: 0 1em; /* Gives table a margin on both sides */
-}
 #condoHeader > h3 {
     background: url(../images/photo2.png);
     padding: .5em;
@@ -362,6 +409,11 @@ td a:visited {
 td a:hover {
     color: black;
 }
+
+
+
+
+
 
 /*+++++++++++++++++++++++++++++++++++
                FAQ.html
@@ -399,6 +451,11 @@ dl {
     border: solid 1px lightgray;
     border-radius: 5px;
 }
+
+
+
+
+
 
 /*+++++++++++++++++++++++++++++++++++
             photos.html
@@ -442,6 +499,11 @@ dl {
 .modal-body > img { /* if I don't give this to .modal-body > img, then the image in the light box  */
     width: 100%;
 }
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++
             trolleyInfo.html
 +++++++++++++++++++++++++++++++++++*/
@@ -456,6 +518,11 @@ dl {
     opacity: 1;
     cursor: default;
 }
+
+
+
+
+
 
 /*+++++++++++++++++++++++++++++++++++
             architectural.html
@@ -472,6 +539,11 @@ dl {
     cursor: default;
 }
 
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++
            financials.html
 +++++++++++++++++++++++++++++++++++*/
@@ -486,6 +558,11 @@ dl {
     opacity: 1;
     cursor: default;
 }
+
+
+
+
+
 
 /*+++++++++++++++++++++++++++++++++++
             forms.html
@@ -502,6 +579,11 @@ dl {
     cursor: default;
 }
 
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++
           governingDocs.html
 +++++++++++++++++++++++++++++++++++*/
@@ -516,6 +598,11 @@ dl {
     opacity: 1;
     cursor: default;
 }
+
+
+
+
+
 
 /*+++++++++++++++++++++++++++++++++++
           minutesPage1-3.html
@@ -532,6 +619,11 @@ dl {
     cursor: default;
 }
 
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++
           newsletters.html
 +++++++++++++++++++++++++++++++++++*/
@@ -546,6 +638,11 @@ dl {
     opacity: 1;
     cursor: default;
 }
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++
           contact.html
 +++++++++++++++++++++++++++++++++++*/
@@ -561,9 +658,22 @@ dl {
     cursor: default;
 }
 
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     6. Generic Selectors
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.clearIt {
+    clear: both;
+}
+p, dd {
+    line-height: 2.2;
+}
+
+
 
 
 
@@ -581,43 +691,27 @@ footer {
 }
 
 
+
+
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     8. Media Queries
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media screen and (min-width:555px) { /* media queries */
-    
-/*+++++++++++++++++++++++++++++++++++
-            index.html
-+++++++++++++++++++++++++++++++++++*/
+/* We have 2 break points */
+
+
+
+@media screen and (min-width:600px) { /*-------- Larger than Mobile --------*/
     
     #container { /* this contains everything except the footer */
-        max-width: 900px; /* sets max width for the page  */
+        max-width: 800px; /* sets max width for the page  */
+        padding: 0 1em;
         margin: 0 auto;
-    }
-    .container {
-        width: 100%;
-    }
-    .container .row p {
-        text-align: left;
-    }
-    .container .box {
-        float: left;
-        width: 100%;
-        margin-bottom: 1.5em;
-    }
-    .box > a {
-        float: left;
-    }
-    .box > .iconWrapper {
-        float: left;
-        width: 30%;
-    }
-    .box > p {
-        width: 100%;        
-    }
-    .iconWrapper img:hover {
-        transform: scale(1.1);
     }
     #menuIcon {
         display: none;
@@ -628,8 +722,8 @@ footer {
         width: auto;
         height: auto;
         display: block;
-        border: 1px solid #bbbbbb;
-        padding: 5px 0;
+        border: 1px solid #eee;
+        padding: 5px 0 0 0;
         background: white;
         opacity: 1;
         -webkit-border-radius: 5px !important;
@@ -647,6 +741,12 @@ footer {
     #nav_ul li {
         text-align: center;
     }
+    #nav_ul > li:nth-child(1), #nav_ul > li:nth-child(2), #nav_ul > li:nth-child(5) {
+        width: 15%; /* makes "Home", "HOA" and "Contact" tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */
+    }
+    #nav_ul > li:nth-child(3), #nav_ul > li:nth-child(4) {
+        width: 27%; /* gives "Property Info" and "Resources" tab more space, or else, their letters overlap each other. */
+    }
     #nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
     color: #eee; 
     cursor: default;
@@ -657,24 +757,53 @@ footer {
         display: block;
         background-color: deepskyblue;
     }    
+    
+/*+++++++++++++++++++++++++++++++++++
+      index.html (media queries)
++++++++++++++++++++++++++++++++++++*/
         
-        
-        
+    .iconWrapper:hover {
+        transform: scale(1.1);
+    }
+    .columns {
+        border-right: solid 3px #eee;
+        margin-left: 0;
+    }
+    .columns:nth-child(3) {
+        border: none;
+        padding-right: 0;
+    }    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
     
-@media screen and (min-width:901px) {
-    .box {
-        display: inline-block;
+@media screen and (min-width:930px) { /*-------- Larger than desktop --------*/
+    .columns:first-child {
+        padding-left: 0;
     }
-    .box > .iconWrapper {
-        float: left;
-        width: 30%;
-    }
-    .box > p {
-        float: left;
-        width: 30%;
-        clear: both;
-    }
+    .columns:nth-child(3) {
+        border: none;
+        padding-right: 0;
+    }  
+    
+    
+    
         
     
 }

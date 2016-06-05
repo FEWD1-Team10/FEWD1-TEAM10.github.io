@@ -13,7 +13,7 @@
         <![endif]-->   
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
     <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
+    <link rel="stylesheet" href="styles/skeleton.css" /><!--Grid system-->
     <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
     <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- <!-- "sm-clean" menu theme (optional)-->
     <link href="styles/main.css" type="text/css" rel="stylesheet" />  
@@ -40,10 +40,10 @@
             <li><a href="hoa.html">HOA</a></li>
             <li><a href="#">Property Info</a>
                 <ul id="pi_ul">
-                    <li><a href="propertyInfo/FAQ.html">FAQ</a></li>
-                    <li><a href="propertyInfo/photos.html">Photos</a></li>
-                    <li><a href="propertyInfo/condoPlans.html">Condo Plans</a></li>
-                    <li><a href="propertyInfo/trolleyInfo.html">Proposed Trolley Line Info</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="condoPlans.html">Condo Plans</a></li>
+                    <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
                 </ul>
             </li>
             <li><a href="#">Resources</a>
@@ -70,35 +70,38 @@
 </div>
 
  <section id="centerMenu">
-    <div class="container"><!--don't get confused with #container above-->
-        <div class="row text-center">
-            <div class="first box">
-                <div class="iconWrapper">
-                    <a class="boardMeeting" href="https://www.google.com/maps/place/Doyle+Recreation+Center/@32.864597,-117.221063,15z/data=!4m2!3m1!1s0x0:0x941b3585c082258b?sa=X&ved=0ahUKEwjXoOavvI_NAhVDx2MKHSfEBDIQ_BIIdDAK"><img src="images/newsletter.png" width="50%" alt="Forms and Newsletter for HOA"></a>
-                    <h4 class="service-heading"><a class="boardMeeting" href="https://www.google.com/maps/place/Doyle+Recreation+Center/@32.864597,-117.221063,15z/data=!4m2!3m1!1s0x0:0x941b3585c082258b?sa=X&ved=0ahUKEwjXoOavvI_NAhVDx2MKHSfEBDIQ_BIIdDAK">Board Meeting</a></h4>
-                </div>
-                <p id="boardMeeting">The next board meeting is scheduled for <strong>Wednesday, June 8th</strong> at <strong>6 p.m.</strong> at <strong>the Doyle Rec Center</strong> on Regents Road. The trolley information begins at 6:30pm - <strong>only owners</strong> may attend. Click <a href="http://colonylapaz.com/2016minutes/2016_JuneAgenda.pdf" target="_blank">here</a> to view agenda.</p>
-            </div>
-            <div class="second box">
-                <div class="iconWrapper">
-                    <a class="contact" href="contact.html"><img src="images/contact.png" alt="contact La Paz" width="50%"></a>
-                    <h4 class="service-heading"><a class="contact" href="contact.html">Contact</a></h4>
-                </div>
-                <p id="contact">Find important contact information for property management and other services. (e.g. plumbing or trash pick-up services)</p>
-            </div>
-            <div class="third box">
-                <div class="iconWrapper">
-                    <a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503"><img src="images/location.png" width="50%" alt="Information about property and its surroundings."></a>
-                    <h4 class="service-heading"><a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503" target="_blank">Location</a></h4>
-                </div>
-                <p id="location">Maps and information on the latest work and upgrades on and around our property. Get directions on Google Maps.</p>
-            </div>
-        </div><!--.row .text-center-->
-    </div><!--.container close-->
-</section>
+    
+     
+    <div class="four columns"><!--from Skeleton's grid system-->
+        <div class="iconWrapper">
+            <a class="contact" href="contact.html"><img src="images/contact.png" alt="contact La Paz" width="50%"></a>
+            <h5 class="service-heading"><a class="contact" href="contact.html">Contact</a></h5>
+        </div>
+        <p id="contact">Find important contact information for property management and other services. (e.g. tree care, lights, patrol, plumbing, landscaping, pool maintenance, trash pick-up services and etc.)</p>
+    </div>
+     
+    <div class="four columns"><!--from Skeleton's grid system-->
+        <div class="iconWrapper">
+            <a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503"><img src="images/location.png" width="50%" alt="Information about property and its surroundings."></a>
+            <h5 class="service-heading"><a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503" target="_blank">Location</a></h5>
+        </div>
+        <p id="location"><a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503" target="_blank">Click here or the location icon to get directions on Google Maps.</a></p>
+    </div>
+    <div class="four columns"><!--from Skeleton's grid system-->
+    <div class="iconWrapper">
+            <a class="boardMeeting" href="https://www.google.com/maps/place/Doyle+Recreation+Center/@32.864597,-117.221063,15z/data=!4m2!3m1!1s0x0:0x941b3585c082258b?sa=X&ved=0ahUKEwjXoOavvI_NAhVDx2MKHSfEBDIQ_BIIdDAK"><img src="images/newsletter.png" width="50%" alt="Forms and Newsletter for HOA"></a>
+            <h5 class="service-heading"><a class="boardMeeting" href="https://www.google.com/maps/place/Doyle+Recreation+Center/@32.864597,-117.221063,15z/data=!4m2!3m1!1s0x0:0x941b3585c082258b?sa=X&ved=0ahUKEwjXoOavvI_NAhVDx2MKHSfEBDIQ_BIIdDAK">Board Meeting</a></h5>
+        </div>
+        <p id="boardMeeting">The next board meeting is scheduled for <strong>6 / 8 / 2016</strong> at <strong>6 p.m.</strong> at <strong>the Doyle Rec Center</strong> on Regents Road. The trolley information begins at 6:30pm - <strong>only owners</strong> may attend. <a href="http://colonylapaz.com/2016minutes/2016_JuneAgenda.pdf" target="_blank">Click here to view agenda.</a></p>
+    </div>
+    <div class="clearIt"></div>
+    
+</section><!--#centerMenu close-->
 
 </div><!--#container close-->
 
+<div class="clearIt"></div>
+    
 <footer>Content &copy; 2008-2016, La Paz HOA</footer>    
 
     <!-- Here are all the script tags -->
