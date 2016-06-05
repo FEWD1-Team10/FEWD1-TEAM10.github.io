@@ -646,6 +646,30 @@ dl {
 /*+++++++++++++++++++++++++++++++++++
           contact.html
 +++++++++++++++++++++++++++++++++++*/
+
+/* Contact Section */
+#contactMain section {
+    padding-bottom: 1em;
+    border-bottom: solid 2px #eee;
+}
+#contactMain a {
+    text-decoration: none;
+}
+#contactMain a:hover {
+    color: black;
+}
+#contactMain section {
+    padding: 1em 0;
+}
+#contactMain section li {
+    list-style-type: square
+}
+#contactMain section img { /* phone icon before phone numbers */
+    width: 20px;
+    margin-bottom: -5px;
+}
+
+
 #contactHeader > h3 {
     background: url(../images/photo18.png) center;
     padding: .5em;
@@ -663,13 +687,92 @@ dl {
 
 
 
+/* form rules */
+#form-contact {
+    width:95%;
+    margin:0 auto 1em;
+}
+fieldset {
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    display: block;
+    padding:20px 10px 5px;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-bottom: solid 3px;
+    width:100%;
+    text-align: center;
+    margin-bottom:.75em;
+}
+input, textarea {
+    background-color:#dceef8;
+    padding:5px;
+    margin:0;
+    border:1px #999 solid;
+    width: 50%
+}
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+input#form-sponsorAmt {
+    width:2.5em;
+}
+textarea {
+    width:60%;
+    min-height:6em;
+}
+#form-contact ol {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#form-contact li {
+    padding-bottom: 10px;
+} 
+#form-contact .radioBtnSet li, #form-contact .checkSet li  {
+    display: inline-block;
+    margin-right:8px;
+}
+#form-contact label {
+    width:30%;
+    display: inline-block;
+    text-align: right;
+}
+#form-contact .radioBtnSet label, #form-contact .dropChoice label, #form-contact .checkSet label {
+    width: auto;
+}
+button[type=submit] {
+    color:#fff;
+    background-color:#243a6c;
+    padding:5px 15px;
+    border-radius:8px;
+    box-shadow:2px 2px 4px #999;
+    margin: 1em auto 0;
+    display: block;
+}
+button[type=submit]:hover {
+    background-color:#666;
+}
+.commentLabel {
+    float:left;
+    padding-right:.5em;
+}
+
+
+
+
+
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     6. Generic Selectors
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .clearIt {
     clear: both;
 }
-p, dd {
+p, dd, ul li {
     line-height: 2.2;
 }
 

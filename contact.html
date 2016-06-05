@@ -3,249 +3,230 @@
 <html lang="en">
     
 <head>
-        <meta charset="utf-8" />
-        <!-- make sure they add this so that it actually is responsive -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact</title>
-        
-        <!--[if lt IE 9]>
-            <script src="js/html5shiv.min.js"></script>
-        <![endif]-->
-        
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
-        <link rel="stylesheet" href="styles/normalize.css" /><!--Normalize-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" /><!--Grid system-->
-        <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
-        <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional) -->
-        <link rel="stylesheet" href="styles/main.css" type="text/css" /><!--general CSS-->
-        <link rel="stylesheet" href="styles/contact.css" /><!--contact page has its own CSS as well-->
+    <meta charset="utf-8" />
+    <!-- make sure they add this so that it actually is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!--Here are all the CSS links-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
+    <link rel="stylesheet" href="styles/normalize.css" /><!--Normalize-->
+    <link rel="stylesheet" href="styles/skeleton.css" /><!--Grid system-->
+    <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
+    <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional) -->
+    <link rel="stylesheet" href="styles/main.css" type="text/css" /><!--general CSS-->
                      
 </head>
     
     
 <body>
-    <div id="container">    
+    
+<div id="container">    
         
-    <header>
-        <div id="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-        </div>
+<header>
+    <div id="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+    </div>
 
-        <nav class="menu-opener" id="menuIcon">
-            <div class="menu-opener-inner"></div>
-        </nav>
-        
-        
-        
-        
-        <ul id="nav_ul" class="sm sm-clean hideIt"> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hoa.html">HOA</a></li>
-            <li><a href="#">Property Info</a>
-                <ul id="pi_ul">
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a href="condoPlans.html">Condo Plans</a></li>
-                    <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Resources</a>
-                <ul id="forms_ul">
-                    <li><a href="forms.html">Forms</a></li>
-                    <li><a href="minutesPage1.html">Minutes</a></li>
-                    <li><a href="financials.html">Financials</a></li>
-                    <li><a href="governingDocs.html">Governing Docs</a></li>
-                    <li><a href="architectural.html">Architectural Info</a></li>
-                    <li><a href="newsletters.html">Newsletters</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contact<span id="currentState"></span></a></li>
-        </ul>
+    <nav class="menu-opener" id="menuIcon">
+        <div class="menu-opener-inner"></div>
+    </nav>
 
+
+
+
+    <ul id="nav_ul" class="sm sm-clean hideIt"> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hoa.html">HOA</a></li>
+        <li><a href="#">Property Info</a>
+            <ul id="pi_ul">
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="condoPlans.html">Condo Plans</a></li>
+                <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Resources</a>
+            <ul id="forms_ul">
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="minutesPage1.html">Minutes</a></li>
+                <li><a href="financials.html">Financials</a></li>
+                <li><a href="governingDocs.html">Governing Docs</a></li>
+                <li><a href="architectural.html">Architectural Info</a></li>
+                <li><a href="newsletters.html">Newsletters</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact<span id="currentState"></span></a></li>
+    </ul>
+
+</header>
+        
+        
+<main id="contactMain">
+    <header id="contactHeader">
+        <h3>Contact Us</h3>
     </header>
-        
-        
-    <main>
-        <header id="contactHeader">
-            <h3>Contact Us</h3>
-        </header>
 
-        
-        <!-- form -->
-        <form id="form-contact" action="form-parser.php" method="post" autocomplete="on">
+    <section id="mgtSection">
+        <h5>Kane Management</h5>
+        <p><a href="mailto:audrey@kanemgt.com">audrey@kanemgt.com</a><br />
+        Streets: Porte La Paz &amp; Rosenda Court<br />
+        <a href="tel:18585511885">
+            <img src="images/phone.png" alt="phone" /> (858) 551-1885
+        </a></p>
+    </section>
+    
+    <section id="serviceSection">
+        <h5>Services</h5>
+        <ul>
+            <li>Termites / Bugs / Rodents: <a href="tel:18006968565"><img src="images/phone.png" alt="phone" /> (800) 696 - 8565</a></li>
+            
+            <li>Lights &amp; Minor Repairs: <a href="tel:17604070250"><img src="images/phone.png" alt="phone" /> (760) 407 - 0250</a></li>
+            
+            <li>Pool Maintenance: <a href="tel:17604070250"><img src="images/phone.png" alt="phone" /> (760) 407 - 0250</a></li>
+            
+            <li>Tree Care and Trimming: <a href="tel:16192358312"><img src="images/phone.png" alt="phone" /> (619) 235 - 8312</a></li>
+            
+            <li>Trash Pickup: <a href="tel:18582786061"><img src="images/phone.png" alt="phone" /> (858) 278 - 6061</a></li>
+            
+            <li>Landscape and Irrigation: <a href="tel:18585497611"><img src="images/phone.png" alt="phone" /> (858) 549 - 7611</a></li>
+            
+            <li>Post Office Sub-Station: <a href="tel:18002758777"><img src="images/phone.png" alt="phone" /> (800) 275 - 8777</a></li>
+            
+            <li>Plumbing: <a href="tel:18585667992"><img src="images/phone.png" alt="phone" /> (858) 566 - 7992</a></li>
+            
+            <li>Patrol Service: <a href="tel:18882941200"><img src="images/phone.png" alt="phone" /> (888) 294 - 1200</a></li>
+            
+            <li>Insurance: <a href="tel:19494947261"><img src="images/phone.png" alt="phone" /> (949) 494 - 7261</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <!-- form -->
+    <form id="form-contact" action="form-parser.php" method="post" autocomplete="on">
 
-            <p>Before filling out this contact form, please consider visiting our <a href="FAQ.html">frequently asked questions (FAQ)</a> page.</p>
+    <p>Before filling out this contact form, please consider visiting our <a href="FAQ.html">frequently asked questions (FAQ)</a> page.</p>
 
-            <fieldset id="genInfo">
-            <legend>Your information</legend>
-                <ol>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" title="Name" placeholder="Please enter your full name" required autofocus pattern="[a-zA-Z ]+" />
-                    </li>
-                    <li>
-                        <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone" title="Phone" placeholder="Day contact" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
-                    </li>
-                    <li>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" title="Email" placeholder="name@domain.com" required />
-                    </li>
-                    <li>
-                        <label for="number">Unit Number:</label>
-                        <input type="unit" name="unit" id="unit" title="Unit Number" placeholder="Where you live." />
-                    </li>
-                </ol>
-            </fieldset>
-            <fieldset id="otherInfo">
-                <legend>More optional information</legend>
-                <p>How should we direct your comments/questions?</p>
-                <ol class="radioBtnSet">
-                    <li>
-                        <input type="radio" name="directTo" id="genInfo" value="gen" />
-                        <label for="GeneralInformation">General Information</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="directTo" id="HOA" value="hoa" />
-                        <label for="HOAservices">HOA Services/Issues</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="directTo" id="landProp" value="land" />
-                        <label for="LandProperty">Land and Property</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="directTo" id="maintDev" value="maint" />
-                        <label for="MaintenanceDevelopments">Maintenance and Developments</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="directTo" id="other" value="other" />
-                        <label for="other">Other</label>
-                        <input type="text" name="directTo" id="box" title="otherOptions" pattern="\d{1,4}" />
-                    </li>
-                </ol>
+        <fieldset id="genInfo">
+        <legend>Your information</legend>
+            <ol>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" title="Name" placeholder="Please enter your full name" required autofocus pattern="[a-zA-Z ]+" />
+                </li>
+                <li>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" title="Phone" placeholder="Day contact" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" title="Email" placeholder="name@domain.com" required />
+                </li>
+                <li>
+                    <label for="number">Unit Number:</label>
+                    <input type="unit" name="unit" id="unit" title="Unit Number" placeholder="Where you live." />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset id="otherInfo">
+            <legend>More optional information</legend>
+            <p>How should we direct your comments/questions?</p>
+            <ol class="radioBtnSet">
+                <li>
+                    <input type="radio" name="directTo" id="genInfo" value="gen" />
+                    <label for="GeneralInformation">General Information</label>
+                </li>
+                <li>
+                    <input type="radio" name="directTo" id="HOA" value="hoa" />
+                    <label for="HOAservices">HOA Services/Issues</label>
+                </li>
+                <li>
+                    <input type="radio" name="directTo" id="landProp" value="land" />
+                    <label for="LandProperty">Land and Property</label>
+                </li>
+                <li>
+                    <input type="radio" name="directTo" id="maintDev" value="maint" />
+                    <label for="MaintenanceDevelopments">Maintenance and Developments</label>
+                </li>
+                <li>
+                    <input type="radio" name="directTo" id="other" value="other" />
+                    <label for="other">Other</label>
+                    <input type="text" name="directTo" id="box" title="otherOptions" pattern="\d{1,4}" />
+                </li>
+            </ol>
 
-                <legend>How are you connected to La Paz HOA?</legend>
-                <p>You may check more than one.</p>
-                <ol class="checkSet">
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="hoaBoard" value="HOA board member" />
-                        <label for="HOAboardMember">I am an HOA board member.</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="aHomeowner"  value="Homeowner" />
-                        <label for="homeowner">I am a homeowner at La Paz.</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="aRenter"  value="Renter" />
-                        <label for="renter">I am a renter at La Paz.</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="aContractor"  value="Contractor" />
-                        <label for="contractor">I am a contractor at La Paz.</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="aSolicitor"  value="Solicitor" />
-                        <label for="solicitor">I am a solicitor.</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="anRenter"  value="Interested Renter" />
-                        <label for="interestedRenter">I am an interested renter.</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="anBuyer"  value="Interested Buyer" />
-                        <label for="interestedBuyer">I am an interested buyer.</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="connectedTo" id="noConnection"  value="No Connection" />
-                        <label for="noConnection">I have no connection in any way.</label>
-                    </li>
-                </ol>
+            <legend>How are you connected to La Paz HOA?</legend>
+            <p>You may check more than one.</p>
+            <ol class="checkSet">
+                <li>
+                    <input type="checkbox" name="connectedTo" id="hoaBoard" value="HOA board member" />
+                    <label for="HOAboardMember">I am an HOA board member.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="connectedTo" id="aHomeowner"  value="Homeowner" />
+                    <label for="homeowner">I am a homeowner at La Paz.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="connectedTo" id="aRenter"  value="Renter" />
+                    <label for="renter">I am a renter at La Paz.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="connectedTo" id="aContractor"  value="Contractor" />
+                    <label for="contractor">I am a contractor at La Paz.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="connectedTo" id="aSolicitor"  value="Solicitor" />
+                    <label for="solicitor">I am a solicitor.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="connectedTo" id="anRenter"  value="Interested Renter" />
+                    <label for="interestedRenter">I am an interested renter.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="connectedTo" id="anBuyer"  value="Interested Buyer" />
+                    <label for="interestedBuyer">I am an interested buyer.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="connectedTo" id="noConnection"  value="No Connection" />
+                    <label for="noConnection">I have no connection in any way.</label>
+                </li>
+            </ol>
 
-                <div class="dropChoice">
-                    <label for="contactWho">Who would you like to contact?</label>
-                    <select name="contact" id="contactTo">
-                        <option hidden="hidden" >Choose:</option>
-                        <option value="Any HOA board member">Any HOA board member.</option>
-                        <option value="Any homeowner">Any homeowner.</option>
-                        <option value="Administrative staff">Administrative staff.</option>
-                        <option value="Maintenance staff">Maintenance staff.</option>
-                        <option value="Specific individual">Specific individual.</option>
-                        <option value="Agent recommendation">Agent recommendation.</option>
-                        <option value="Bueller Bueller Bueller">Anybody.</option>
-                    </select>
-                </div>
-            </fieldset>
+            <div class="dropChoice">
+                <label for="contactWho">Who would you like to contact?</label>
+                <select name="contact" id="contactTo">
+                    <option hidden="hidden" >Choose:</option>
+                    <option value="Any HOA board member">Any HOA board member.</option>
+                    <option value="Any homeowner">Any homeowner.</option>
+                    <option value="Administrative staff">Administrative staff.</option>
+                    <option value="Maintenance staff">Maintenance staff.</option>
+                    <option value="Specific individual">Specific individual.</option>
+                    <option value="Agent recommendation">Agent recommendation.</option>
+                    <option value="Bueller Bueller Bueller">Anybody.</option>
+                </select>
+            </div>
+        </fieldset>
 
-            <fieldset id="comments-questions">
+        <fieldset id="comments-questions">
 
 
-                <label for="comment" class="commentLabel">Additional questions or comments</label>
-                <textarea name="comment" id="comment" class="longText"></textarea>
-            </fieldset>
-            <button type="submit">Submit</button>
-        </form>
-        <!-- end form -->
-        
-        
-        <aside class="rightContainer">
-            <article class="rightHolder">
-            <h5>Colny La Paz Condominium Association</h5>
-Inc 7/84, tax ID #33-0042609<br />
-Streets: Porte La Paz &amp; Rosenda Court<br />
-built 1984/85, control turned over to HOA 5/88<br />
-sub of La Jolla Colony Master Association-McKibbin Co.<br />
-(858) 551-1885<br />
-<br />
-<strong>Management</strong>
-audrey@kanemgt.com<br />
-Kane Management<br />
-<br />
-Mail HOA Checks Here:<br />
-Colony La Paz/PO Box 51126<br />
-Los Angeles, CA 90051-5426<br />
-<br />
-Termites/Bugs/Rodents: 800.696.8565	(Agricultural Pest Control Company)<br />
-<br />
-Lights &amp; Minor Repairs: 760.407.0250 (ResCom)<br />
-<br />
-Pool Maintenance: 760.407.0250 - KEYS $50<br />
-<br />
-Tree Care and Trimming: 619.235.8312 (Western Tree Service)<br />
-<br />
-Trash Pickup: 858.278.6061 (Pacific Waste, pickups on  Mon/Thurs/Sat)<br />
-<br />
-Landscape and Irrigation: 858.549.7611 (Pacific Property Service)<br />
-<br />
-Post Office Sub-Station: 800.275.8777 (University City Sub-Station)<br />
-<br />
-HOA repairs boxes; owners are responsible for replacement keys to mailboxes.<br />
-<br />
-Plumbing: 858.566.7992 (Sun West Plumbing)<br />
-<br />
-Emergency Information and Water Shut-off Maps are posted on pool bulletin board.<br />
-Click here for Water Shut-off info<br />
-<br />
-Patrol Service: 888-294-1200 UPS<br />
-<br />
-Four random drive through patrols at night.<br />
-The Association does not provide security, nor does the Association claim to be a secure facility.   The Association does not guarantee your safety nor the safety of your car or your possessions.  In case of emergency, call 911.<br />
-<br />
-Insurance: all insurance information must be obtained directly from:<br />
-Farmers Insurance agent Phil Schrock (949) 494-7261<br />
-policy 01489-11-40, renews February 5th each year.<br />
-DEDUCTIBLE $5000 There is NO earthquake insurance<br />
-not a conversion, no timeshares, no rental desk, no commercial space<br />
-<br />
-Board Meeting : 2nd Wed, 6pm at Doyle Elementary School in winter; at Porte La Paz pool area in summer<br />
-<br />
-No meeting in April, August, &amp; December<br />
-<br />
-Pet Rules: 2 cats or one dog not more than 20 lbs
-               
-            </article>
-        </aside>
+            <label for="comment" class="commentLabel">Additional questions or comments</label>
+            <textarea name="comment" id="comment" class="longText"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- end form -->
 
-    </main>
+
+
+
+</main>
     
         
     </div> <!--#container close-->

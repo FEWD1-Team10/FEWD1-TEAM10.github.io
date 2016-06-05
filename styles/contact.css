@@ -1,11 +1,7 @@
 body {
     position: relative;
 }
-.rightHolder {
-    position: relative;
-    top: 230px;
-    left: 0;
-}
+
 
 /* form rules */
 #form-contact {
@@ -91,7 +87,7 @@ button[type=submit]:hover {
         width: 50%;
         margin: 0 10px;
     }
-    .rightContainer {
+    #contactSection {
         width: 45%;
         position: absolute;
         top: 225px;
