@@ -1,13 +1,13 @@
 
-function fixedNav () { // I name a function. Function definition.
+function fixedNav () { // Function definition.  I name a function "fixedNav". 
     var fromPageTop = $(document).scrollTop(); // "scrollTop" is how far away you scrolled down from the top of the page(=document).
     var logoHeight = $('#logo').height(); // Get the height of #logo.
         
-    if (fromPageTop >= logoHeight) {
+    if ((fromPageTop >= logoHeight) && (window.innerWidth >= 600)) { // I set 600px because it should work only when the screen is bigger than mobiles'.
         $('#nav_ul').addClass('fixedNav');
-        $('#nav_ul').width($('header').width());
+        $('#nav_ul').width($('header').width()); // Give #nav_ul the width of the header.
     } else {
-        $('#nav_ul').removeClass('fixedNav');
+        $('#nav_ul').removeClass('fixedNav'); // if you still see the bottom of the logo.
     } 
 } // end fixed nav function.
     

@@ -83,7 +83,6 @@ body {
     max-width: 380px;
     padding: 1em;
 }
-
 #menuIcon { /* Hamburger menu */
     position: fixed;
     float: right;
@@ -101,7 +100,6 @@ body {
     z-index: 7; /* rslide has 5 z-index */
     position: fixed;
     top: 0;
-    left: 3%;
     width: 100%;
     height: 100%;
     background-color: black;
@@ -462,6 +460,7 @@ dl {
 /*+++++++++++++++++++++++++++++++++++
             photos.html
 +++++++++++++++++++++++++++++++++++*/
+
 #galleryHeader > h3 {
     background: url(../images/photo4.png) top;
     padding: .5em;
@@ -472,10 +471,6 @@ dl {
 #galleryHeader > h3:hover {
     opacity: 1;
     cursor: default;
-}
-#links img {
-    max-width: 100%;
-    height:auto;
 }
 #galleryPics ul {
     text-align: center;
@@ -497,9 +492,6 @@ dl {
 .jpegImg {
     width: 25px;
     height: auto;
-}
-.modal-body > img { /* if I don't give this to .modal-body > img, then the image in the light box  */
-    width: 100%;
 }
 
 
@@ -844,14 +836,15 @@ footer {
     #nav_ul li {
         text-align: center;
     }
-    #nav_ul > li { /* affects the top menu items only */
-        width: 20%;
-    }
+
     #nav_ul > li:nth-child(1), #nav_ul > li:nth-child(2), #nav_ul > li:nth-child(5) {
-        width: 15%; /* makes "Home", "HOA" and "Contact" tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */ 
+        width: 14%; /* makes "Home", "HOA" and "Contact" tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */ 
     }
-    #nav_ul > li:nth-child(3), #nav_ul > li:nth-child(4) {
-        width: 27%;  /* gives "Property Info" and "Resources" tab more space, or else, their letters overlap each other. */
+    #nav_ul > li:nth-child(3) {
+        width: 31%;  /* gives "Property Info" tab more space, or else, their letters and the arrow overlap each other. */
+    }
+    #nav_ul > li:nth-child(4) {
+        width: 26%; /* the width of all the <li>s is equal to 99%. */
     }
     #nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
     color: #eee; 
@@ -863,6 +856,9 @@ footer {
         display: block;
         background-color: deepskyblue;
     }    
+    span.sub-arrow { /* Little arrows next to "Property Info" and "Resources" tabs */
+        margin-right: 5%;
+    }
     
 /*+++++++++++++++++++++++++++++++++++
       index.html (media queries)
@@ -870,7 +866,7 @@ footer {
     .rslides_nav { /* prev, next button on slide show */
         top: 42%;
     }    
-    .iconWrapper:hover {
+    .iconWrapper img:hover {
         transform: scale(1.1);
     }
     .columns {
@@ -884,24 +880,7 @@ footer {
         border-left: solid 3px #eee;
         margin-left: 0;
         padding-right: 0;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }    
     
     
 }
@@ -911,9 +890,17 @@ footer {
         padding-left: 0;
     }
     
-    
-    
-    
-        
+
     
 }
+
+
+
+
+
+
+
+
+
+
+
