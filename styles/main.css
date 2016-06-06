@@ -618,7 +618,7 @@ dl {
     padding: 1em 0;
 }
 #contactMain section li {
-    list-style-type: square
+    list-style-type: square;
 }
 #contactMain section img { /* phone icon before phone numbers */
     width: 20px;
@@ -641,6 +641,9 @@ dl {
 
 
 /* form rules */
+#otherInfo label {
+    font-weight: normal;
+}
 #form-contact {
     width:95%;
     margin:0 auto 1em;
