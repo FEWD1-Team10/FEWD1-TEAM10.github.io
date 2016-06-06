@@ -75,13 +75,12 @@ body {
     margin: 0 1em;
 }
 #logo {
-    padding: .1em;
     text-align: center;
 }
 #logo img {
-    width: 65%;
+    width: 70%;
     max-width: 380px;
-    padding: 1em;
+    padding-top: 1em;
 }
 #menuIcon { /* Hamburger menu */
     position: fixed;
@@ -805,6 +804,9 @@ footer {
 
 
 @media screen and (min-width:600px) { /*-------- Larger than Mobile --------*/
+    #logo {
+        padding-bottom: 1.5em;
+    }
     #nav_ul.fixedNav {
         position: fixed;
         top: 0;
