@@ -362,10 +362,6 @@ header > h3 { /* affects every page */
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#hoaHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
 article h6 {
     font-weight: bold;
 }
@@ -383,10 +379,6 @@ article h6 {
     opacity: .6;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
-}
-#condoHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
 }
 table {
     width: 100%; /* makes the table responsive */
@@ -425,10 +417,6 @@ td a:hover {
     opacity: .6;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
-}
-#faqHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
 }
 dl {
     margin: 0; /* dl has a margin by default */
@@ -469,10 +457,6 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#galleryHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
 #galleryPics ul {
     text-align: center;
     list-style-type: none;
@@ -509,10 +493,7 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#trolleyHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
+
 
 
 
@@ -528,10 +509,6 @@ dl {
     opacity: .6;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
-}
-#archHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
 }
 
 
@@ -549,10 +526,6 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#financialsHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
 
 
 
@@ -569,10 +542,7 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#formsHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
+
 
 
 
@@ -589,10 +559,7 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#governHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
+
 
 
 
@@ -609,10 +576,7 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#minutesHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
+
 
 
 
@@ -629,10 +593,7 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#newsHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
+
 
 
 
@@ -672,10 +633,7 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-#contactHeader > h3:hover {
-    opacity: 1;
-    cursor: default;
-}
+
 
 
 
