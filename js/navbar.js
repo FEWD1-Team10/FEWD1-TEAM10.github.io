@@ -22,12 +22,18 @@ $(document).ready(function() {
     });
     $(document).on('scroll', fixedNav); 
     
-                             
-                             
+                                              
     $('#pi_tab').on('hover', function(){
         $(this).find("span.sub-arrow").addClass("hideArrow");
     });
     $('#pi_tab').on('mouseleave', function(){
+        $("span.sub-arrow").removeClass("hideArrow");
+    });
+    
+    $('#resources_tab').on('hover', function(){
+        $(this).find("span.sub-arrow").addClass("hideArrow");
+    });
+    $('#resources_tab').on('mouseleave', function(){
         $("span.sub-arrow").removeClass("hideArrow");
     });
 }); // end doc ready function.

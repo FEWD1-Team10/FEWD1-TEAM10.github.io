@@ -127,7 +127,6 @@ body {
 +++++++++++++++++++++++++++++++++++*/
 
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
-  -webkit-transition: 250ms all;
   transition: 250ms all;
 }
 
