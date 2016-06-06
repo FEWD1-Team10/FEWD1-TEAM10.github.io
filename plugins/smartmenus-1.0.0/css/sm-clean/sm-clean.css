@@ -214,12 +214,12 @@
   .sm-clean li {
     border-top: 0;
   }
-  .sm-clean > li > ul:before,
-  .sm-clean > li > ul:after {
+  .sm-clean > li > ul.pi:before,
+  .sm-clean > li > ul.pi:after {
     content: '';
     position: absolute;
     top: -18px;
-    left: 30px;
+    left: 40%;
     width: 0;
     height: 0;
     overflow: hidden;
@@ -227,9 +227,28 @@
     border-style: dashed dashed solid dashed;
     border-color: transparent transparent #bbbbbb transparent;
   }
-  .sm-clean > li > ul:after {
+    .sm-clean > li > ul.pi:after {
     top: -16px;
-    left: 31px;
+    left: 40%;
+    border-width: 8px;
+    border-color: transparent transparent white transparent;
+  }
+  .sm-clean > li > ul.resources:before,
+  .sm-clean > li > ul.resources:after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 38%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 9px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #bbbbbb transparent;
+  }
+  .sm-clean > li > ul.resources:after {
+    top: -16px;
+    left: 38%;
     border-width: 8px;
     border-color: transparent transparent white transparent;
   }
