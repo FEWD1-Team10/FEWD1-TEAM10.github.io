@@ -2,7 +2,7 @@
 $(function() {
     $(".slideShow").responsiveSlides({
       auto: true,             // Boolean: Animate automatically, true or false
-      speed: 1500,            // Integer: Speed of the transition, in milliseconds
+      speed: 3000,            // Integer: Speed of the transition, in milliseconds
       timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
       pager: true,           // Boolean: Show pager, true or false
       nav: true,             // Boolean: Show navigation, true or false

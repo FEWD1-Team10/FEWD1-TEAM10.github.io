@@ -358,7 +358,7 @@ header > h3 { /* affects every page */
 #hoaHeader > h3 {
     background: url(../images/photo1.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -376,7 +376,7 @@ article h6 {
 #condoHeader > h3 {
     background: url(../images/photo2.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -414,7 +414,7 @@ td a:hover {
 #faqHeader > h3 {
     background: url(../images/photo3.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -453,7 +453,7 @@ dl {
 #galleryHeader > h3 {
     background: url(../images/photo4.png) top;
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -489,7 +489,7 @@ dl {
 #trolleyHeader > h3 {
     background: url(../images/photo10.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -506,7 +506,7 @@ dl {
 #archHeader > h3 {
     background: url(../images/photo5.png) top;
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -522,7 +522,7 @@ dl {
 #financialsHeader > h3 {
     background: url(../images/photo6.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -538,7 +538,7 @@ dl {
 #formsHeader > h3 {
     background: url(../images/photo7.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -555,7 +555,7 @@ dl {
 #governHeader > h3 {
     background: url(../images/photo8.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -572,7 +572,7 @@ dl {
 #minutesHeader > h3 {
     background: url(../images/photo9.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -589,7 +589,7 @@ dl {
 #newsHeader > h3 {
     background: url(../images/photo10.png);
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
@@ -629,7 +629,7 @@ dl {
 #contactHeader > h3 {
     background: url(../images/photo18.png) center;
     padding: .5em;
-    opacity: .6;
+    opacity: .7;
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
