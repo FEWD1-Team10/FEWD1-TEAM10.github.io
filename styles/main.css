@@ -624,7 +624,6 @@ dl {
     margin-bottom: -5px;
 }
 
-
 #contactHeader > h3 {
     background: url(../images/photo18.jpg) center;
     padding: .5em;
@@ -632,6 +631,7 @@ dl {
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
+
 
 
 
@@ -715,10 +715,20 @@ button[type=submit]:hover {
     float:left;
     padding-right:.5em;
 }
+.checkSet li label {
+    font-weight: normal;
+}
 
-
-
-
+/*+++++++++++++++++++++++++++++++++++
+            thankyou.html
++++++++++++++++++++++++++++++++++++*/
+#thanksHeader > h3 {
+    background: url(../images/photo5.jpg) bottom right;
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -787,7 +797,6 @@ footer {
         height: auto;
         display: block;
         border: 1px solid #eee;
-        padding: 5px 0 0 0;
         background: white;
         opacity: 1;
     }
@@ -801,14 +810,17 @@ footer {
         text-align: center;
     }
 
-    #nav_ul > li:nth-child(1), #nav_ul > li:nth-child(2), #nav_ul > li:nth-child(5) {
-        width: 14%; /* makes "Home", "HOA" and "Contact" tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */ 
+    #nav_ul > li:nth-child(1), #nav_ul > li:nth-child(2) {
+        width: 14%; /* makes "Home" and "HOA tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */ 
     }
     #nav_ul > li:nth-child(3) {
-        width: 31%;  /* gives "Property Info" tab more space, or else, their letters and the arrow overlap each other. */
+        width: 29.5%;  /* gives "Property Info" tab more space, or else, their letters and the arrow overlap each other. */
     }
     #nav_ul > li:nth-child(4) {
-        width: 26%; /* the width of all the <li>s is equal to 99%. */
+        width: 25%; /* the width of all the <li>s is equal to 99%. */
+    }
+    #nav_ul > li:nth-child(5) {
+        width: 17.5%;
     }
     #nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
     color: #eee; 
@@ -816,7 +828,8 @@ footer {
     }
     #nav_ul #currentState { /* Blue underline bar. This lets people know under which menu tab you are */
         height: 5px;
-        margin-top: 5px;
+        margin-top: 7px;
+        margin-bottom: -12px; /* minus height and margin-top */
         display: block;
         background-color: deepskyblue;
     }    
@@ -890,8 +903,21 @@ footer {
     }    
     
     
+
+
+/*+++++++++++++++++++++++++++++++++++
+      contact.html (media queries)
++++++++++++++++++++++++++++++++++++*/
+    #callSection {
+        float: left;
+        width: 45%;
+    }
+    form {
+        float: right;
+        width: 50%;
+    }
+
 }
-    
 @media screen and (min-width:930px) { /*-------- Larger than desktop --------*/
     .columns:first-child {
         padding-left: 0;

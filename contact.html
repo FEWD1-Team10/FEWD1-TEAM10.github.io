@@ -6,6 +6,10 @@
     <meta charset="utf-8" />
     <!-- make sure they add this so that it actually is responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La Paz HOA Contact Information">
+    <meta name="keywords" content="La Paz, Contact, HOA, Phone numbers">
+    <meta name="author" content="Jose Vargas, Justin Tan, Younji Woo">
+    
     <title>Contact</title>
 
     <!--[if lt IE 9]>
@@ -16,8 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
     <link rel="stylesheet" href="styles/normalize.css" /><!--Normalize-->
     <link rel="stylesheet" href="styles/skeleton.css" /><!--Grid system-->
-    <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
-    <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-blue" menu theme (optional) -->
+    <link href='styles/smartmenu-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's core CSS (required) -->    
+    <link href='styles/smartmenu-clean-style.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's clean menu theme (optional)-->
     <link rel="stylesheet" href="styles/main.css" type="text/css" /><!--general CSS-->
                      
 </head>
@@ -42,7 +46,7 @@
     <ul id="nav_ul" class="sm sm-clean hideIt"> 
         <li><a href="index.html">Home</a></li>
         <li><a href="hoa.html">HOA</a></li>
-        <li><a href="#">Property Info</a>
+        <li id="pi_tab"><a href="#">Property Info</a>
             <ul id="pi_ul">
                 <li><a href="FAQ.html">FAQ</a></li>
                 <li><a href="photos.html">Photos</a></li>
@@ -50,7 +54,7 @@
                 <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
             </ul>
         </li>
-        <li><a href="#">Resources</a>
+        <li id="resources_tab"><a href="#">Resources</a>
             <ul id="forms_ul">
                 <li><a href="forms.html">Forms</a></li>
                 <li><a href="minutesPage1.html">Minutes</a></li>
@@ -71,16 +75,14 @@
         <h3>Contact Us</h3>
     </header>
 
-    <section id="mgtSection">
+    <section id="callSection">
         <h5>Kane Management</h5>
         <p><a href="mailto:audrey@kanemgt.com">audrey@kanemgt.com</a><br />
         Streets: Porte La Paz &amp; Rosenda Court<br />
         <a href="tel:18585511885">
             <img src="images/phone.png" alt="phone" /> (858) 551-1885
         </a></p>
-    </section>
     
-    <section id="serviceSection">
         <h5>Services</h5>
         <ul>
             <li>Termites / Bugs / Rodents: <a href="tel:18006968565"><img src="images/phone.png" alt="phone" /> (800) 696 - 8565</a></li>
@@ -104,7 +106,7 @@
             <li>Insurance: <a href="tel:19494947261"><img src="images/phone.png" alt="phone" /> (949) 494 - 7261</a></li>
             
         </ul>
-    </section>
+    </section><!--end #callSection-->
     
     
     
@@ -129,77 +131,78 @@
                     <input type="email" name="email" id="email" title="Email" placeholder="name@domain.com" required />
                 </li>
                 <li>
-                    <label for="number">Unit Number:</label>
-                    <input type="unit" name="unit" id="unit" title="Unit Number" placeholder="Where you live." />
+                    <label for="unit">Unit Number:</label>
+                    <input type="number" name="unit" id="unit" title="Unit Number" placeholder="Where you live." />
                 </li>
             </ol>
         </fieldset>
         <fieldset id="otherInfo">
-            <legend>More optional information</legend>
-            <p>How should we direct your comments/questions?</p>
+            <legend>How should we direct your comments/questions?</legend>
             <ol class="radioBtnSet">
                 <li>
-                    <input type="radio" name="directTo" id="genInfo" value="gen" />
-                    <label for="genInfo">General Information</label>
+                    <input type="radio" name="directTo" id="generalInfo" value="gen" />
+                    <label for="generalInfo">&nbsp;General Information</label>
                 </li>
                 <li>
                     <input type="radio" name="directTo" id="HOA" value="hoa" />
-                    <label for="HOA">HOA Services/Issues</label>
+                    <label for="HOA">&nbsp;HOA Services/Issues</label>
                 </li>
                 <li>
                     <input type="radio" name="directTo" id="landProp" value="land" />
-                    <label for="landProp">Land and Property</label>
+                    <label for="landProp">&nbsp;Land and Property</label>
                 </li>
                 <li>
                     <input type="radio" name="directTo" id="maintDev" value="maint" />
-                    <label for="maintDev">Maintenance and Developments</label>
+                    <label for="maintDev">&nbsp;Maintenance and Developments</label>
                 </li>
                 <li>
                     <input type="radio" name="directTo" id="other" value="other" />
-                    <label for="other">Other</label>
+                    <label for="other">&nbsp;Other</label>
                     <input type="text" name="directTo" id="box" title="otherOptions" pattern="\d{1,4}" />
                 </li>
             </ol>
-
+            
+        </fieldset>
+            
+        <fieldset>
             <legend>How are you connected to La Paz HOA?</legend>
-            <p>You may check more than one.</p>
             <ol class="checkSet">
                 <li>
                     <input type="checkbox" name="connectedTo" id="hoaBoard" value="HOA board member" />
-                    <label for="hoaBoard">I am an HOA board member.</label>
+                    <label for="hoaBoard">&nbsp;I am an HOA board member.</label>
                 </li>
                 <li>
                     <input type="checkbox" name="connectedTo" id="aHomeowner"  value="Homeowner" />
-                    <label for="aHomeowner">I am a homeowner at La Paz.</label>
+                    <label for="aHomeowner">&nbsp;I am a homeowner at La Paz.</label>
                 </li>
                 <li>
                     <input type="checkbox" name="connectedTo" id="aRenter"  value="Renter" />
-                    <label for="aRenter">I am a renter at La Paz.</label>
+                    <label for="aRenter">&nbsp;I am a renter at La Paz.</label>
                 </li>
                 <li>
                     <input type="checkbox" name="connectedTo" id="aContractor"  value="Contractor" />
-                    <label for="aContractor">I am a contractor at La Paz.</label>
+                    <label for="aContractor">&nbsp;I am a contractor at La Paz.</label>
                 </li>
                 <li>
                     <input type="checkbox" name="connectedTo" id="aSolicitor"  value="Solicitor" />
-                    <label for="aSolicitor">I am a solicitor.</label>
+                    <label for="aSolicitor">&nbsp;I am a solicitor.</label>
                 </li>
                 <li>
                     <input type="checkbox" name="connectedTo" id="anRenter"  value="Interested Renter" />
-                    <label for="anRenter">I am an interested renter.</label>
+                    <label for="anRenter">&nbsp;I am an interested renter.</label>
                 </li>
                 <li>
                     <input type="checkbox" name="connectedTo" id="anBuyer"  value="Interested Buyer" />
-                    <label for="anBuyer">I am an interested buyer.</label>
+                    <label for="anBuyer">&nbsp;I am an interested buyer.</label>
                 </li>
                 <li>
                     <input type="checkbox" name="connectedTo" id="noConnection"  value="No Connection" />
-                    <label for="noConnection">I have no connection in any way.</label>
+                    <label for="noConnection">&nbsp;I have no connection in any way.</label>
                 </li>
             </ol>
 
             <div class="dropChoice">
-                <label for="contactWho">Who would you like to contact?</label>
+                <label for="contactTo">Who would you like to contact?&nbsp;</label>
                 <select name="contact" id="contactTo">
                     <option hidden="hidden" >Choose:</option>
                     <option value="Any HOA board member">Any HOA board member.</option>
@@ -230,12 +233,13 @@
     
         
     </div> <!--#container close-->
-    
-        <footer>Content &copy; 2008-2016, La Paz HOA</footer>
-    
+
+    <div class="clearIt"></div>
+    <footer>Content &copy; 2008-2016, La Paz HOA</footer>
+
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><!--for Smart Menus-->
-    <script src="plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--for Smart Menus-->
+    <script src="js/jquery.smartmenus.min.js"></script><!--for Smart Menus-->
     <script src="js/navbar.js"></script><!--for Smart Menus-->
    
         

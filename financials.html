@@ -6,6 +6,10 @@
         <meta charset="utf-8" />
         <!-- make sure they add this so that it actually is responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="La Paz HOA Financials">
+        <meta name="keywords" content="La Paz, HOA, Financial information, Financials">
+        <meta name="author" content="Jose Vargas, Justin Tan, Younji Woo">
+        
         <title>Resources | Financials</title>
         
         <!--[if lt IE 9]>
@@ -14,8 +18,8 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
         <link rel="stylesheet" href="styles/normalize.css" /><!--Normalize-->
         <link rel="stylesheet" href="styles/skeleton.css" /><!--Grid system-->
-        <link href='plugins/smartmenus-1.0.0/css/sm-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenus core CSS (required) -->    
-        <link href='plugins/smartmenus-1.0.0/css/sm-clean/sm-clean.css' rel='stylesheet' type='text/css' /><!-- "sm-clean" menu theme (optional)-->
+        <link href='styles/smartmenu-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's core CSS (required) -->    
+        <link href='styles/smartmenu-clean-style.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's clean menu theme (optional)-->
         
         <link rel="stylesheet" href="styles/main.css" /><!--general CSS-->
              
@@ -36,7 +40,7 @@
         <ul id="nav_ul" class="sm sm-clean hideIt"> 
             <li><a href="index.html">Home</a></li>
             <li><a href="hoa.html">HOA</a></li>
-            <li><a href="#">Property Info</a>
+            <li id="pi_tab"><a href="#">Property Info</a>
                 <ul id="pi_ul">
                     <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="photos.html">Photos</a></li>
@@ -44,7 +48,7 @@
                     <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
                 </ul>
             </li>
-            <li><a href="#">Resources<span id="currentState"></span></a>
+            <li id="resources_tab"><a href="#">Resources<span id="currentState"></span></a>
                 <ul id="forms_ul">
                     <li><a href="forms.html">Forms</a></li>
                     <li><a href="minutesPage1.html">Minutes</a></li>
@@ -132,7 +136,7 @@
     
     <!-- All the script tags are here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--for Smart Menus and Photo Gallery-->
-    <script src="plugins/smartmenus-1.0.0/jquery.smartmenus.js"></script><!--for Smart Menus-->
+    <script src="js/jquery.smartmenus.min.js"></script><!--for Smart Menus-->
     <script src="js/navbar.js"></script><!--for Smart Menus-->
    
 </body>
