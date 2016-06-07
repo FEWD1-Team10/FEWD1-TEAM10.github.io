@@ -645,6 +645,9 @@ dt + dd { /* This is the white box */
 
 #yourInfo legend { /* "Your Information" text */
     padding: 3em 0 0;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    font-weight: 300;
 }
 #yourInfo p { 
     font-style: italic;
