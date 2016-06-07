@@ -5,7 +5,7 @@ function fixedNav () { // Function definition.  I name a function "fixedNav".
         
     if ((fromPageTop >= logoHeight) && (window.innerWidth >= 600)) { // I set 600px because it should work only when the screen is bigger than mobiles'.
         $('#nav_ul').addClass('fixedNav');
-        $('#nav_ul').width($('header').width()); // Give #nav_ul the width of the header.
+        $('#nav_ul').width($('header').width() - 2); // Give #nav_ul the width of the header. I subtract 2px because of #nav_ul's 1px wide border.
     } else {
         $('#nav_ul').removeClass('fixedNav'); // if you still see the bottom of the logo.
     } 
