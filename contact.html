@@ -127,22 +127,23 @@
 
         <fieldset id="yourInfo">
             <legend><h5>Your information</h5></legend>
-            <ol>
+            <p><span class="asterisk">*</span> indicates required field.</p>
+            <ul id="main_ul">
                 <li>
-                    <label for="name">Name:</label>
+                    <label class="txtRight" for="name">Name <span class="asterisk">*</span>&nbsp;</label>
                     <input type="text" name="name" id="name" title="Name" placeholder="John Doe" required pattern="[a-zA-Z ]+" />
                 </li>
                 <li>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone" title="Phone" placeholder="Phone number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+                    <label class="txtRight" for="phone">Phone <span class="asterisk">*</span>&nbsp;</label>
+                    <input type="tel" name="phone" id="phone" title="Phone" placeholder="phone number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
                 </li>
                 <li>
-                    <label for="email">Email:</label>
+                    <label class="txtRight" for="email">Email <span class="asterisk">*</span>&nbsp;</label>
                     <input type="email" name="email" id="email" title="Email" placeholder="name@domain.com" required />
                 </li>
                 <li>
-                    <label for="unit">Unit Number:</label>
-                    <input type="number" name="unit" id="unit" title="Unit Number" placeholder="Unit number" />
+                    <label class="txtRight" for="unit">Unit Number&nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" name="unit" id="unit" title="unit Number" placeholder="unit number" />
                 </li>
                 <li>
                     <label class="qLabel">How should we direct your questions?</label>
@@ -208,46 +209,32 @@
                         </li>
                     </ol><!-- end of .checkSet -->
                 </li><!-- end of "How are you connected to La Paz HOA?" -->
-            
-            
-            
-            </ol><!-- end of the form -->
+                
+                <li>
+                    <label class="qLabel" for="contactTo">Who would you like to contact?&nbsp;</label>
+                    <select name="contact" id="contactTo">
+                        <option hidden="hidden" >Choose:</option>
+                        <option value="Any HOA board member">Any HOA board member.</option>
+                        <option value="Any homeowner">Any homeowner.</option>
+                        <option value="Administrative staff">Administrative staff.</option>
+                        <option value="Maintenance staff">Maintenance staff.</option>
+                        <option value="Specific individual">Specific individual.</option>
+                        <option value="Agent recommendation">Agent recommendation.</option>
+                        <option value="Bueller Bueller Bueller">Anybody.</option>
+                    </select>
+                </li><!--end of "Who would you like to contact?"-->
+              
+                <li>
+                    <label class="qLabel" id="commentLabel" for="comment">Additional questions or comments :</label>
+                    <textarea name="comment" id="comment" class="longText"></textarea>
+                </li><!-- end of "Additional questions or comments" -->
+                
+            </ul><!-- end of the form -->
         </fieldset><!-- end of #yourInfo -->
-        
-            
-        <fieldset>
-            <legend><h5></h5></legend>
-            
-            
-            
-            
-            
-            
-
-            <div class="dropChoice">
-                <label for="contactTo">Who would you like to contact?&nbsp;</label>
-                <select name="contact" id="contactTo">
-                    <option hidden="hidden" >Choose:</option>
-                    <option value="Any HOA board member">Any HOA board member.</option>
-                    <option value="Any homeowner">Any homeowner.</option>
-                    <option value="Administrative staff">Administrative staff.</option>
-                    <option value="Maintenance staff">Maintenance staff.</option>
-                    <option value="Specific individual">Specific individual.</option>
-                    <option value="Agent recommendation">Agent recommendation.</option>
-                    <option value="Bueller Bueller Bueller">Anybody.</option>
-                </select>
-            </div>
-        </fieldset>
-
-        <fieldset id="comments-questions">
-
-
-            <label for="comment" class="commentLabel">Additional questions or comments</label>
-            <textarea name="comment" id="comment" class="longText"></textarea>
-        </fieldset>
+    
         <button type="submit">Submit</button>
-    </form>
-    <!-- end form -->
+    </form><!-- end form -->
+    
 
 
 

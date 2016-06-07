@@ -593,14 +593,15 @@ dt + dd { /* This is the white box */
 /* Call Section (#callSection) */
 
 #callSection article {
-    padding: 1em 0;
+    padding: 3em 0;
     border-bottom: solid 2px #eee;
 }
 #callSection article a {
     white-space: nowrap;
 }
-#svcArticle {
+#callSection #svcArticle {
     border-top: solid 2px #eee;
+    padding-bottom: 2em;
 }
 #mgtArticle p {
     margin-bottom: 0;
@@ -611,17 +612,16 @@ dt + dd { /* This is the white box */
 #contactMain a:hover {
     color: black;
 }
-#contactMain section {
-    padding: 1em 0;
-}
 #contactMain section li {
-    list-style-type: square;
+    padding-bottom: 1em;
+}
+#contactMain section li:last-child {
+    padding-bottom: 0;
 }
 #contactMain section img { /* phone icon before phone numbers */
     width: 20px;
     margin-bottom: -5px;
 }
-
 #contactHeader > h3 {
     background: url(../images/photo18.jpg) center;
     padding: .5em;
@@ -632,84 +632,91 @@ dt + dd { /* This is the white box */
 #contactHeader + p {
     font-size: .9em;
     color: #666;
-    margin-bottom: -.5em;
+    margin-bottom: 3em;
 }
 #contactHeader + p a {
     font-style: normal;
     margin: 0 .3em;
-    font-size: 1em;
 }
 
 
 
-/*------ Forms ------*/
+/*------ Forms ("Your Information")------*/
 
 
-#yourInfo legend {
-    padding-bottom: 1em;
+#yourInfo legend { /* "Your Information" text */
+    padding: 3em 0 0;
 }
-
-fieldset {
+#yourInfo > p { 
+    font-style: italic;
+    font-size: .8em;
+    text-align: right;
+    padding: 1.5em 3% 0 0;
+    margin-bottom: 0;
+}
+#yourInfo > ul { 
+    list-style-type: none;
+}
+fieldset { 
     border:none;
     margin: 0;
     padding: 0;
 }
-
-input, textarea {
-    background-color:#dceef8;
-    padding:5px;
-    margin:0;
-    border:1px #999 solid;
-    width: 65%
+#main_ul > li:first-child, #main_ul > li:nth-child(2), #main_ul > li:nth-child(3), #main_ul > li:nth-child(4) {
+    margin-bottom: .5em;    
 }
-input[type=radio], input[type=checkbox] {
-    width: auto;
+#main_ul > li:nth-child(5) {
+    margin-top: 2em;
+    margin-bottom: none;
 }
-input#form-sponsorAmt {
-    width:2.5em;
+span.asterisk { /* red asterisks */
+    color: red;
+    font-weight: normal;
 }
-textarea {
-    width:60%;
-    min-height:6em;
-}
-#form-contact ol {
-    list-style-type: none;
-    margin:0;
-    padding:0;
-}
-#form-contact li {
-    padding-bottom: .5em;
-} 
-#form-contact .radioBtnSet li, #form-contact .checkSet li  {
-    display: inline-block;
-    margin-right:8px;
-}
-#form-contact label {
-    width: 30%;
-    display: inline-block;
+label.txtRight { /* Name, Phone, Email, Unite Number */
     text-align: right;
+    float: left;
+    width: 30%;
 }
-#form-contact .radioBtnSet label, #form-contact .dropChoice label, #form-contact .checkSet label {
+.qLabel, .txtRight { /* bold texts */
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+input, textarea { /* All the boxes and buttons except submit btn */
+    background-color:#dceef8;
+    margin:0;
+    border:1px #999 solid; 
+    width: 60%;
+    display: inline-block;
+}
+input[type=radio], input[type=checkbox] { /* check boxes and radio btns */
     width: auto;
 }
-button[type=submit] {
-    color:#fff;
-    background-color:#243a6c;
-    padding:5px 15px;
-    border-radius:8px;
-    box-shadow:2px 2px 4px #999;
-    margin: 1em auto 0;
+.radioBtnSet li, .checkSet li  {
+    display: inline-block;
+    padding: .3em;
+}
+#form-contact li li label { /* radio and check button labels */
+    display: inline-block;
+    font-weight: normal;
+}
+#commentLabel {
+    margin-top: 2em;
+}
+textarea#comment { /* Multiline text area */
     display: block;
+    width: 100%;
+}
+button[type=submit] { /* Submit button */
+    background-color: #666;
+    color: white;
+    display: block;
+    margin: 2em auto;
 }
 button[type=submit]:hover {
-    background-color:#666;
-}
-.commentLabel {
-    float:left;
-    padding-right:.5em;
-}
-.checkSet li label {
-    font-weight: normal;
+    background-color: deepskyblue;
 }
 
 /*+++++++++++++++++++++++++++++++++++
@@ -874,7 +881,7 @@ footer {
     
     
 /*+++++++++++++++++++++++++++++++++++
-      index.html (media queries)
+      index.html (tablet ver.)
 +++++++++++++++++++++++++++++++++++*/
     .rslides_nav { /* prev, next button on slide show */
         top: 42%;
@@ -894,9 +901,25 @@ footer {
         margin-left: 0;
         padding-right: 0;
     }    
+/*+++++++++++++++++++++++++++++++++++
+      contact.html (tablet ver.)
++++++++++++++++++++++++++++++++++++*/
     
-
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:930px) { /*-------- Larger than desktop --------*/
     .columns:first-child {
         padding-left: 0;
@@ -944,19 +967,26 @@ footer {
 /*+++++++++++++++++++++++++++++++++++
       contact.html (desktop ver.)
 +++++++++++++++++++++++++++++++++++*/
-    #svcArticle {
+    #callSection #svcArticle { /* "Services" */
         display: inline-block;
         float: left;
         width: 45%;
         padding: 0 2em;
-        border-right: 3px solid #eee;
+        border-top: none;
+        border-bottom: none;
     }
-    #mgtArticle {
+    #callSection #mgtArticle { /* "Kane Management" */
         float: left;
         width: 34%;
         padding: 0 2em;
+        border-bottom: none;
     }
-    
+    label.txtRight { /* Name, Phone, Email, Unit Number */
+        width: 15%;   
+    }
+    .txtRight ~ input { /* input next to "Name", "Phone", "Email", "Unit Number" */
+        width: 50%;
+    }
 }
 
 
