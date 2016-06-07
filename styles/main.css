@@ -340,10 +340,10 @@ header > h3 { /* affects every page */
 .columns p {
     margin: 0 auto;
 }
-.service-heading {
+a ~ h5 {
     margin: 0px auto;
 }
-.service-heading a {
+a ~ h5 a {
     text-decoration: none;
 }
 
@@ -432,7 +432,7 @@ dl {
 .questionBox:active {
     background-color: black;/* We should change this depends on our color theme. */
 }
-.answerBox { /* This is the white box */
+dt + dd { /* This is the white box */
     line-height: 1.6em;
     margin: 0;
     padding: 1em;
