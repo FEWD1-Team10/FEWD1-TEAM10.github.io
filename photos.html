@@ -30,74 +30,78 @@
         
     </head>
     
-    <body>
-        <div id="container">
-        
-        <header>
+<body>
+    <div id="container">
+
+    <header>
+        <!-- Logo with the tree -->
         <div id="logo">
             <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
         </div>
 
-        <nav class="menu-opener" id="menuIcon"><!-- makes the menu icon from hamberger to X shape -->
+        <!-- Hamburger icon at the upper right hand corner -->
+        <div class="menu-opener" id="menuIcon">
             <div class="menu-opener-inner"></div>
+        </div>
+        
+        <nav><!--Main menu (smart menu)--> 
+            <ul id="nav_ul" class="sm sm-clean hideIt">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hoa.html">HOA</a></li>
+                <li id="pi_tab"><a href="#">Property Info<span id="currentState"></span></a>
+                    <ul id="pi_ul">
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="#" id="iamhere">Photos</a></li>
+                        <li><a href="condoPlans.html">Condo Plans</a></li>
+                        <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
+                    </ul>
+                </li>
+                <li id="resources_tab"><a href="#">Resources</a>
+                    <ul id="forms_ul">
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="minutesPage1.html">Minutes</a></li>
+                        <li><a href="financials.html">Financials</a></li>
+                        <li><a href="governingDocs.html">Governing Docs</a></li>
+                        <li><a href="architectural.html">Architectural Info</a></li>
+                        <li><a href="newsletters.html">Newsletters</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
 
-        <ul id="nav_ul" class="sm sm-clean hideIt"><!--Main menu (smart menu)--> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hoa.html">HOA</a></li>
-            <li id="pi_tab"><a href="#">Property Info<span id="currentState"></span></a>
-                <ul id="pi_ul">
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="#" id="iamhere">Photos</a></li>
-                    <li><a href="condoPlans.html">Condo Plans</a></li>
-                    <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
-                </ul>
-            </li>
-            <li id="resources_tab"><a href="#">Resources</a>
-                <ul id="forms_ul">
-                    <li><a href="forms.html">Forms</a></li>
-                    <li><a href="minutesPage1.html">Minutes</a></li>
-                    <li><a href="financials.html">Financials</a></li>
-                    <li><a href="governingDocs.html">Governing Docs</a></li>
-                    <li><a href="architectural.html">Architectural Info</a></li>
-                    <li><a href="newsletters.html">Newsletters</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        </header>
+    </header>
         
-        <main>
-            <header id="galleryHeader">
-                <h3>Photo Gallery</h3>
-            </header>    
-            
-            <section id="galleryPics">
-                <ul id="links">
-                    <li><a href="images/photo1.jpg" title="Main gate" data-gallery><img src="images/photo1.jpg" alt="Main gate" />Main gate</a></li>
-                    <li><a href="images/photo2.jpg" title="Pool area" data-gallery><img src="images/photo2.jpg" alt="Pool area" />Pool area</a></li>
-                    <li><a href="images/photo3.jpg" title="Side Walk" data-gallery><img src="images/photo3.jpg" alt="Sheeps Head" />Side Walk</a></li>
-                    <li><a href="images/photo4.jpg" title="Decorative Arbors" data-gallery><img src="images/photo4.jpg" alt="Decorative Arbors" />Decorative Arbors</a></li>
-                    <li><a href="images/photo5.jpg" title="Flowering Landscape" data-gallery><img src="images/photo5.jpg" alt="Flowering Landscape" />Flowering Landscape</a></li>
-                    <li><a href="images/photo6.jpg" title="Entrance by the Pool" data-gallery><img src="images/photo6.jpg" alt="Entrance by the Pool" />Entrance by the Pool</a></li>
-                    <li><a href="images/photo7.jpg" title="Lush Greenery" data-gallery><img src="images/photo7.jpg" alt="Lush Greenery" />Lush Greenery</a></li>
-                    <li><a href="images/photo8.jpg" title="Shaded Car Port" data-gallery><img src="images/photo8.jpg" alt="Shaded Car Port" />Shaded Car Port</a></li>
-                    <li><a href="images/photo9.jpg" title="Parking Lot" data-gallery><img src="images/photo9.jpg" alt="Parking Lot" />Parking Lot</a></li>
-                    <li><a href="images/photo10.jpg" title="Flowering Bushes" data-gallery><img src="images/photo10.jpg" alt="Flowering Bushes" />Flowering Bushes</a></li>
-                    <li><a href="images/photo11.jpg" title="Mail Area" data-gallery><img src="images/photo11.jpg" alt="mail area" />Mail Area</a></li>
-                    <li><a href="images/photo12.jpg" title="Resident Parking Area" data-gallery><img src="images/photo12.jpg"  alt="Resident Parking Area" />Resident Parking Area</a></li>
-                    <li><a href="images/photo13.jpg" title="Main Gate" data-gallery><img src="images/photo13.jpg" alt="Main Gate" />Main Gate</a></li>
-                    <li><a href="images/photo14.jpg" title="Main Gate" data-gallery><img src="images/photo14.jpg" alt="Main Gate" />Main Gate</a></li>
-                    <li><a href="images/photo16.jpg" title="Charmant Dr." data-gallery><img src="images/photo16.jpg" alt="Charmant Dr." />Charmant Dr.</a></li>
-                    <li><a href="images/photo17.jpg" title="La Jolla Colony Dr." data-gallery><img src="images/photo17.jpg" alt="La Jolla Colony Dr." />La Jolla Colony Dr.</a></li>
-                    <li><a href="images/photo18.jpg" title="Flowers and Trees along La Jolla Colony Dr." data-gallery><img src="images/photo18.jpg" alt="Flowers and Trees along La Jolla Colony Dr." />Flowers and Trees along La Jolla Colony Dr.</a></li>
+    <main>
+        <header id="galleryHeader">
+            <h3>Photo Gallery</h3>
+        </header>    
 
-                </ul>
-            </section>
+        <section id="galleryPics">
+            <ul id="links">
+                <li><a href="images/photo1.jpg" title="Main gate" data-gallery><img src="images/photo1.jpg" alt="Main gate" />Main gate</a></li>
+                <li><a href="images/photo2.jpg" title="Pool area" data-gallery><img src="images/photo2.jpg" alt="Pool area" />Pool area</a></li>
+                <li><a href="images/photo3.jpg" title="Side Walk" data-gallery><img src="images/photo3.jpg" alt="Sheeps Head" />Side Walk</a></li>
+                <li><a href="images/photo4.jpg" title="Decorative Arbors" data-gallery><img src="images/photo4.jpg" alt="Decorative Arbors" />Decorative Arbors</a></li>
+                <li><a href="images/photo5.jpg" title="Flowering Landscape" data-gallery><img src="images/photo5.jpg" alt="Flowering Landscape" />Flowering Landscape</a></li>
+                <li><a href="images/photo6.jpg" title="Entrance by the Pool" data-gallery><img src="images/photo6.jpg" alt="Entrance by the Pool" />Entrance by the Pool</a></li>
+                <li><a href="images/photo7.jpg" title="Lush Greenery" data-gallery><img src="images/photo7.jpg" alt="Lush Greenery" />Lush Greenery</a></li>
+                <li><a href="images/photo8.jpg" title="Shaded Car Port" data-gallery><img src="images/photo8.jpg" alt="Shaded Car Port" />Shaded Car Port</a></li>
+                <li><a href="images/photo9.jpg" title="Parking Lot" data-gallery><img src="images/photo9.jpg" alt="Parking Lot" />Parking Lot</a></li>
+                <li><a href="images/photo10.jpg" title="Flowering Bushes" data-gallery><img src="images/photo10.jpg" alt="Flowering Bushes" />Flowering Bushes</a></li>
+                <li><a href="images/photo11.jpg" title="Mail Area" data-gallery><img src="images/photo11.jpg" alt="mail area" />Mail Area</a></li>
+                <li><a href="images/photo12.jpg" title="Resident Parking Area" data-gallery><img src="images/photo12.jpg"  alt="Resident Parking Area" />Resident Parking Area</a></li>
+                <li><a href="images/photo13.jpg" title="Main Gate" data-gallery><img src="images/photo13.jpg" alt="Main Gate" />Main Gate</a></li>
+                <li><a href="images/photo14.jpg" title="Main Gate" data-gallery><img src="images/photo14.jpg" alt="Main Gate" />Main Gate</a></li>
+                <li><a href="images/photo16.jpg" title="Charmant Dr." data-gallery><img src="images/photo16.jpg" alt="Charmant Dr." />Charmant Dr.</a></li>
+                <li><a href="images/photo17.jpg" title="La Jolla Colony Dr." data-gallery><img src="images/photo17.jpg" alt="La Jolla Colony Dr." />La Jolla Colony Dr.</a></li>
+                <li><a href="images/photo18.jpg" title="Flowers and Trees along La Jolla Colony Dr." data-gallery><img src="images/photo18.jpg" alt="Flowers and Trees along La Jolla Colony Dr." />Flowers and Trees along La Jolla Colony Dr.</a></li>
 
-            
-        </main>
+            </ul>
+        </section>
+
+
+    </main>
             
         
         

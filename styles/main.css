@@ -590,10 +590,20 @@ dt + dd { /* This is the white box */
           contact.html
 +++++++++++++++++++++++++++++++++++*/
 
-/* Contact Section */
-#contactMain section {
-    padding-bottom: 1em;
+/* Call Section (#callSection) */
+
+#callSection article {
+    padding: 1em 0;
     border-bottom: solid 2px #eee;
+}
+#callSection article a {
+    white-space: nowrap;
+}
+#svcArticle {
+    border-top: solid 2px #eee;
+}
+#mgtArticle p {
+    margin-bottom: 0;
 }
 #contactMain a {
     text-decoration: none;
@@ -619,43 +629,38 @@ dt + dd { /* This is the white box */
     color: white;
     text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
 }
-
-
-
-
-
-
-
-
-/* form rules */
-#otherInfo label {
-    font-weight: normal;
+#contactHeader + p {
+    font-size: .9em;
+    color: #666;
+    margin-bottom: -.5em;
 }
-#form-contact {
-    width:95%;
-    margin:0 auto 1em;
+#contactHeader + p a {
+    font-style: normal;
+    margin: 0 .3em;
+    font-size: 1em;
 }
+
+
+
+/*------ Forms ------*/
+
+
+#yourInfo legend {
+    padding-bottom: 1em;
+}
+
 fieldset {
     border:none;
     margin: 0;
     padding: 0;
 }
-legend {
-    display: block;
-    padding:20px 10px 5px;
-    font-weight: bold;
-    font-size: 1.25em;
-    border-bottom: solid 3px;
-    width:100%;
-    text-align: center;
-    margin-bottom:.75em;
-}
+
 input, textarea {
     background-color:#dceef8;
     padding:5px;
     margin:0;
     border:1px #999 solid;
-    width: 50%
+    width: 65%
 }
 input[type=radio], input[type=checkbox] {
     width: auto;
@@ -673,14 +678,14 @@ textarea {
     padding:0;
 }
 #form-contact li {
-    padding-bottom: 10px;
+    padding-bottom: .5em;
 } 
 #form-contact .radioBtnSet li, #form-contact .checkSet li  {
     display: inline-block;
     margin-right:8px;
 }
 #form-contact label {
-    width:30%;
+    width: 30%;
     display: inline-block;
     text-align: right;
 }
@@ -890,20 +895,6 @@ footer {
         padding-right: 0;
     }    
     
-    
-
-
-/*+++++++++++++++++++++++++++++++++++
-      contact.html (media queries)
-+++++++++++++++++++++++++++++++++++*/
-    #callSection {
-        float: left;
-        width: 45%;
-    }
-    form {
-        float: right;
-        width: 50%;
-    }
 
 }
 @media screen and (min-width:930px) { /*-------- Larger than desktop --------*/
@@ -949,6 +940,22 @@ footer {
     border-width: 8px;
     border-color: transparent transparent white transparent;
   }
+ 
+/*+++++++++++++++++++++++++++++++++++
+      contact.html (desktop ver.)
++++++++++++++++++++++++++++++++++++*/
+    #svcArticle {
+        display: inline-block;
+        float: left;
+        width: 45%;
+        padding: 0 2em;
+        border-right: 3px solid #eee;
+    }
+    #mgtArticle {
+        float: left;
+        width: 34%;
+        padding: 0 2em;
+    }
     
 }
 
