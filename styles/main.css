@@ -646,11 +646,11 @@ dt + dd { /* This is the white box */
 #yourInfo legend { /* "Your Information" text */
     padding: 3em 0 0;
 }
-#yourInfo > p { 
+#yourInfo p { 
     font-style: italic;
     font-size: .8em;
     text-align: right;
-    padding: 1.5em 3% 0 0;
+    padding: 1.5em 2% 0 0;
     margin-bottom: 0;
 }
 #yourInfo > ul { 
@@ -687,7 +687,7 @@ input, textarea { /* All the boxes and buttons except submit btn */
     background-color:#dceef8;
     margin:0;
     border:1px #999 solid; 
-    width: 60%;
+    width: 70%;
     display: inline-block;
 }
 input[type=radio], input[type=checkbox] { /* check boxes and radio btns */
@@ -903,8 +903,15 @@ footer {
 /*+++++++++++++++++++++++++++++++++++
       contact.html (tablet ver.)
 +++++++++++++++++++++++++++++++++++*/
-    
-    
+    label.txtRight { /* Name, Phone, Email, Unite Number */
+        width: 19%;
+    }
+    #yourInfo p {
+        padding: 1.5em 21% 0 0;
+    }
+    .txtRight ~ input { /* input next to "Name", "Phone", "Email", "Unit Number" */
+        width: 60%;
+    }
     
     
     
@@ -980,11 +987,14 @@ footer {
         padding: 0 2em;
         border-bottom: none;
     }
+    #yourInfo p {
+        padding: 1.5em 27% 0 0;
+    }
     label.txtRight { /* Name, Phone, Email, Unit Number */
-        width: 15%;   
+        width: 13%;   
     }
     .txtRight ~ input { /* input next to "Name", "Phone", "Email", "Unit Number" */
-        width: 50%;
+        width: 60%;
     }
 }
 
